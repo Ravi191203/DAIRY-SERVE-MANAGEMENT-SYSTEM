@@ -85,6 +85,8 @@ if ($result && mysqli_num_rows($result) > 0) {
             margin-top: 20px;
             font-weight: bold;
             color: white;
+            width:82%;
+            margin-left: 150px;
 
         }
 

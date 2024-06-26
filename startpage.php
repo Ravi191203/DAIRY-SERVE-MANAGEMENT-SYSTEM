@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dairy Serve Management System</title>
-    <link rel="icon" href="/PROJECT-K/images/new.png" type="image/icon type">
+    <link rel="icon" href="/dairy-serve-management-system/images/new.png" type="image/icon type">
     <script src="https://kit.fontawesome.com/d5e4bd332c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="webfonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
@@ -316,7 +316,7 @@
                 <h5>Made with <img src="images/c4.png" alt="Made With Image" height="30px" width="100px"></h5>
             </div>
             <div class="text-center mt-3">
-                <h3>Follow Us</h3>
+                <h3>Connect with</h3>
                 <div class="d-flex justify-content-center mt-2">
                     <a href="https://www.instagram.com/?hl=en" class="text-decoration-none text-white mx-2">
                         <i class="fab fa-instagram fa-2x"></i>

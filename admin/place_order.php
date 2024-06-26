@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }
             }
 
-            header("Location: /PROJECT-K/buyers/order_confirmation.php?order_id=$order_id");
+            header("Location: /dairy-serve-management-system/buyers/order_confirmation.php?order_id=$order_id");
             exit(); // Ensure the script stops executing after the redirect
         } else {
             echo "Error inserting order details: " . mysqli_error($conn);

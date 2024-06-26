@@ -8,7 +8,7 @@
     <link href="assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
   <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
   <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
-    <link rel="icon" href="/PROJECT-K/images/new.png" type="image/icon type">
+    <link rel="icon" href="/dairy-serve-management-system/images/new.png" type="image/icon type">
     <style>
     body {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(images/mainimg.jpeg);
@@ -145,10 +145,10 @@
                                             echo '<script>setTimeout(function(){ window.location = "startpage.php"; }, 2000);</script>';
                                             break;
                                         case 'farmer':
-                                            echo '<script>setTimeout(function(){ window.location = "/PROJECT-K/index.php"; }, 2000);</script>';
+                                            echo '<script>setTimeout(function(){ window.location = "/dairy-serve-management-system/index.php"; }, 2000);</script>';
                                             break;
                                         case 'staff':
-                                            echo '<script>setTimeout(function(){ window.location = "/PROJECT-K/staff1/staff_register.php"; }, 2000);</script>';
+                                            echo '<script>setTimeout(function(){ window.location = "/dairy-serve-management-system/staff1/staff_register.php"; }, 2000);</script>';
                                             break;
                                         case 'buyer':
                                             echo '<script>setTimeout(function(){ window.location = "index.php"; }, 2000);</script>';

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dairy Serve Management System</title>
-    <link rel="icon" href="/PROJECT-K/images/new.png" type="image/icon type">
+    <link rel="icon" href="/dairy-serve-management-system/images/new.png" type="image/icon type">
     <script src="https://kit.fontawesome.com/d5e4bd332c.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="slide.css" rel="stylesheet">
@@ -193,7 +193,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a href="startpage.php" class="nav-link"><i class="fa-solid fa-house" style="color: blue;"></i> Home</a></li>
-                        <li class="nav-item"><a href="/PROJECT-K/buyers/dashboard.php" class="nav-link"><i class="fa-solid fa-cart-plus" style="color: blue"></i> Services</a></li>
+                        <li class="nav-item"><a href="/dairy-serve-management-system/buyers/dashboard.php" class="nav-link"><i class="fa-solid fa-cart-plus" style="color: blue"></i> Services</a></li>
                         <li class="nav-item"><a href="aboutus.html" class="nav-link"><i class="fa-solid fa-address-card" style="color: blue;"></i> About Us</a></li>
                         <li class="nav-item"><a href="gallerybuyer.html" class="nav-link"><i class="fa-solid fa-images" style="color: blue;"></i> Gallery</a></li>
                         <li class="nav-item"><a href="contact.php" class="nav-link"><i class="fa-sharp fa-solid fa-image fa-comment " style="color: blue;"></i> Contact Form</a></li>

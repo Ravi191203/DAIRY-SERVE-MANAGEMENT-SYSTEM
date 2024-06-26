@@ -27,6 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         mysqli_query($conn, $query);
     }
 
-    header("Location: /PROJECT-K/buyers/order_confirmation.php?order_id=$order_id");
+    header("Location: /dairy-serve-management-system/buyers/order_confirmation.php?order_id=$order_id");
 }
 ?>

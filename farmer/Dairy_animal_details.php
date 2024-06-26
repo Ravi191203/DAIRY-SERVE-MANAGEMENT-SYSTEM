@@ -20,7 +20,7 @@
 
 <div class="main-content">
 
-  <center><h2> <img src="/PROJECT-K/images/cow-silhouette.png" alt="cow" style="height:50px; width:auto;"> Dairy Animal Details</h2></center>
+  <center><h2> <img src="/dairy-serve-management-system/images/cow-silhouette.png" alt="cow" style="height:50px; width:auto;"> Dairy Animal Details</h2></center>
 <!--Fetch Details-->
 <div class="card">
     <div class="card-body">

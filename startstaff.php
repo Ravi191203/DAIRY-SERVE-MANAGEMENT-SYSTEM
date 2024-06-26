@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dairy Serve Management System</title>
-    <link rel="icon" href="/PROJECT-K/images/new.png" type="image/icon type">
+    <link rel="icon" href="/dairy-serve-management-system/images/new.png" type="image/icon type">
     <script src="https://kit.fontawesome.com/d5e4bd332c.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="slide.css" rel="stylesheet">
@@ -151,7 +151,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a href="startstaff.php" class="nav-link"><i class="fa-solid fa-house-chimney-crack fa-glass fa-beat-fade" style="color: black;"></i> Home</a></li>
-                        <li class="nav-item"><a href="/PROJECT-K/staff/staff_option.php" class="nav-link"><i class="fa-solid fa-cart-flatbed-suitcase fa-beat-fade fa-glass" style="color: black;"></i> Services</a></li>
+                        <li class="nav-item"><a href="/dairy-serve-management-system/staff/staff_option.php" class="nav-link"><i class="fa-solid fa-cart-flatbed-suitcase fa-beat-fade fa-glass" style="color: black;"></i> Services</a></li>
                         <li class="nav-item"><a href="aboutus.html" class="nav-link"><i class="fa-sharp fa-solid fa-circle-info fa-glass fa-beat-fade" style="color: black;"></i> About Us</a></li>
                         <li class="nav-item"><a href="gallery.html" class="nav-link"><i class="fa-sharp fa-solid fa-image fa-beat-fade" style="color: black;"></i> Gallery</a></li>
                         <li class="nav-item"><a href="contact.php" class="nav-link"><i class="fa-sharp fa-solid fa-image fa-comment fa-beat-fade" style="color: black;"></i> Contact Form</a></li>

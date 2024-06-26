@@ -63,15 +63,15 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
 <body>
 <div class="container mt-5">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark alert alert-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="/PROJECT-K/images/new.png" alt="Logo">
+                    <img src="/dairy-serve-management-system/images/new.png" alt="Logo">
                 </a>
                 <h1 class="navbar-text text-dark">Dairy Serve Management System</h1>
                 <div class="ml-auto">
-                    <a href="/PROJECT-K/logout.php" class="btn btn-info btn-logout">
-                        <img src="/PROJECT-K/images/logout.png" alt="Logout">
+                    <a href="/dairy-serve-management-system/logout.php" class="btn btn-info btn-logout">
+                        <img src="/dairy-serve-management-system/images/logout.png" alt="Logout">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </a>
                 </div>
@@ -82,8 +82,8 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
     <div class="row text-center alert alert-warning">
         <div class="col-md-3 mb-4">
             <div class="card">
-                <a href="/PROJECT-K/farmer/farmer_details.php" class="text-decoration-none text-dark">
-                    <img src="/PROJECT-K/images/farmers.jpeg" alt="Farmer">
+                <a href="/dairy-serve-management-system/farmer/farmer_details.php" class="text-decoration-none text-dark">
+                    <img src="/dairy-serve-management-system/images/farmers.jpeg" alt="Farmer">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-user"></i> Farmer Details</h5>
                     </div>
@@ -92,7 +92,7 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
         </div>
         <div class="col-md-3 mb-4">
             <div class="card">
-                <a href="/PROJECT-K/farmer/edit_farmer_details.php" class="text-decoration-none text-dark">
+                <a href="/dairy-serve-management-system/farmer/edit_farmer_details.php" class="text-decoration-none text-dark">
                     <script src="https://cdn.lordicon.com/lordicon.js"></script>
                     <lord-icon
                         src="https://cdn.lordicon.com/zfzufhzk.json"
@@ -107,7 +107,7 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
         </div>
         <div class="col-md-3 mb-4">
             <div class="card">
-                <a href="/PROJECT-K/farmer/view_daily_data.php" class="text-decoration-none text-dark">
+                <a href="/dairy-serve-management-system/farmer/view_daily_data.php" class="text-decoration-none text-dark">
                     <img src="gif/q6.gif" style="width:150px;height:150px;">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-database"></i> Data</h5>
@@ -117,7 +117,7 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
         </div>
         <div class="col-md-3 mb-4">
             <div class="card">
-                <a href="/PROJECT-K/farmer/add_daily_data.php" class="text-decoration-none text-dark">
+                <a href="/dairy-serve-management-system/farmer/add_daily_data.php" class="text-decoration-none text-dark">
                     <img src="gif/q2.gif" style="width:150px;height:150px;">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-plus"></i> Add Data</h5>
@@ -126,9 +126,26 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
             </div>
         </div>
     </div>
-</div>
+</div><br><bR>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<div class="footer bg-dark">
+        <h5>&copy;2023 Dairy Serve Management System. All Rights Reserved</h5>
+    </div>
+    <style>
+         .footer {
+            
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+            border-top: 1px solid #dee2e6;
+            margin-top: 40px;
+            font-weight: bold;
+            color: white;
+            
+
+        }
+    </style>
 </body>
 </html>

@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
                     header("Location: startfarmer.php");
                     break;
                 case 'staff':
-                    header("Location: /PROJECT-K/staff/verify_staff.php");
+                    header("Location: /dairy-serve-management-system/staff/verify_staff.php");
                     break;
                 case 'buyer':
                     header("Location: startbuyer.php");
@@ -52,7 +52,7 @@ if (isset($_POST['login'])) {
 <head>
     <meta charset="UTF-8">
     <title>Login Form</title>
-    <link rel="icon" href="/PROJECT-K/images/new.png" type="image/icon type">
+    <link rel="icon" href="/dairy-serve-management-system/images/new.png" type="image/icon type">
     <link href="assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
     <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
     <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />

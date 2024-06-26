@@ -85,7 +85,7 @@ $conn->close();
 <body>
    
     <center><h2> EDIT STAFF DETAILS</h2></center>
-    <h4><a href="/PROJECT-K/staff_dashboard.php">BACK</a></h4><br>
+    <h4><a href="/dairy-serve-management-system/staff_dashboard.php">BACK</a></h4><br>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">

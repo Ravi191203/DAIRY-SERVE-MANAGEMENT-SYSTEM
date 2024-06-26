@@ -138,7 +138,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
     <header>
         <nav class="navbar navbar-expand-lg alert alert-danger text-black">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="/PROJECT-K/images/new.png" alt="Logo"></a>
+                <a class="navbar-brand" href="#"><img src="/dairy-serve-management-system/images/new.png" alt="Logo"></a>
                 <h1 class="navbar-text text-white">Dairy Serve Management System</h1>
                 <div class="ml-auto">
                 <a href="logout.php" class="btn btn-outline-success"><i class="fas fa-sign-in-alt"></i> Logout</a>                </div>
@@ -150,14 +150,14 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center">
         <center><h2 class=" gradient-text">Staff Dashboard</h2></center>
-            <a href="/PROJECT-K/staff/staff_option.php" class="btn btn-outline-secondary">Back</a>
+            <a href="/dairy-serve-management-system/staff/staff_option.php" class="btn btn-outline-secondary">Back</a>
         </div>
         <div class="row mt-1">
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
-                        <a href="/PROJECT-K/staff/farmer_details.php">
-                            <img src="/PROJECT-K/images/farmers.jpeg" alt="Farmer" style="width:150px;height:150px;">
+                        <a href="/dairy-serve-management-system/staff/farmer_details.php">
+                            <img src="/dairy-serve-management-system/images/farmers.jpeg" alt="Farmer" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>Farmer Details</h5>
                             </div>
@@ -168,8 +168,8 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
-                        <a href="/PROJECT-K/staff/view_staff_details.php">
-                            <img src="/PROJECT-K/gif/q4.gif" alt="Staff" style="width:150px;height:150px;">
+                        <a href="/dairy-serve-management-system/staff/view_staff_details.php">
+                            <img src="/dairy-serve-management-system/gif/q4.gif" alt="Staff" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>Logged in Staff Details</h5>
                             </div>
@@ -180,7 +180,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
-                        <a href="/PROJECT-K/staff/animal_details.php">
+                        <a href="/dairy-serve-management-system/staff/animal_details.php">
                             <img src="images/cow_.png" alt="Animal" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>Animal Details</h5>
@@ -192,8 +192,8 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
-                        <a href="/PROJECT-K/staff/daily_data.php">
-                            <img src="/PROJECT-K/gif/q1.gif" alt="Daily Data" style="width:150px;height:150px;">
+                        <a href="/dairy-serve-management-system/staff/daily_data.php">
+                            <img src="/dairy-serve-management-system/gif/q1.gif" alt="Daily Data" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>View Daily Data</h5>
                             </div>
@@ -204,7 +204,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
-                        <a href="/PROJECT-K/staff/add_daily_data.php">
+                        <a href="/dairy-serve-management-system/staff/add_daily_data.php">
                             <img src="images/mail-inbox-add-16-filled_.png" alt="Daily Data" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>Add Daily Data</h5>
@@ -216,8 +216,8 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
-                        <a href="/PROJECT-K/staff/view_bills.php">
-                            <img src="/PROJECT-K/gif/q3.gif" alt="View Bills" style="width:150px;height:150px;">
+                        <a href="/dairy-serve-management-system/staff/view_bills.php">
+                            <img src="/dairy-serve-management-system/gif/q3.gif" alt="View Bills" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>View Bills</h5>
                             </div>
@@ -228,7 +228,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
-                        <a href="/PROJECT-K/staff/generate_bill.php">
+                        <a href="/dairy-serve-management-system/staff/generate_bill.php">
                             <img src="images/bill_ (1).png" alt="Generate Bill" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>Generate Bill</h5>
@@ -240,8 +240,8 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
-                        <a href="/PROJECT-K/add_customer_process.php">
-                            <img src="/PROJECT-K/gif/q2.gif" alt="Add Customers" style="width:150px;height:150px;">
+                        <a href="/dairy-serve-management-system/add_customer_process.php">
+                            <img src="/dairy-serve-management-system/gif/q2.gif" alt="Add Customers" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>Add Customers</h5>
                             </div>
@@ -252,8 +252,8 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
-                        <a href="/PROJECT-K/staff/staff_cart.php">
-                            <img src="/PROJECT-K/images/Dairyproducts.png" alt="Cart" style="width:150px;height:150px;">
+                        <a href="/dairy-serve-management-system/staff/staff_cart.php">
+                            <img src="/dairy-serve-management-system/images/Dairyproducts.png" alt="Cart" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>Cart</h5>
                             </div>

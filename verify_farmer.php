@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($result && mysqli_num_rows($result) === 1) {
         $_SESSION['farmer_id'] = $farmer_id;
-        header('Location: /PROJECT-K/farmer_dashboard.php');
+        header('Location: /dairy-serve-management-system/farmer_dashboard.php');
         exit;
     } else {
         $error = "Invalid farmer ID.";
