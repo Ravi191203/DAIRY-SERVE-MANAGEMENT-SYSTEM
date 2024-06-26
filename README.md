@@ -4,8 +4,8 @@
 
 The Dairy Serve Management System is a comprehensive solution designed to manage various aspects of a dairy business. The system is built using HTML, CSS, Bootstrap, JavaScript for the front end, and PHP, MySQL (WAMP) for the backend. It includes multiple modules and functionalities tailored to streamline operations, manage data efficiently, and provide an intuitive interface for different user roles.
 ## Dashboard
-- ![Dashboard](images/dashboard.png)
-- ![](images/dash2.png)
+ ![Dashboard](images/dashboard.png)
+ ![](images/dash2.png)
   <hr>
   
 ## Modules
@@ -43,8 +43,9 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 7.  Dairy Products Module 
    
    - This module manages the inventory of dairy products. It allows adding new products, updating product details, managing stock levels, and tracking product sales.
-   - ![Dairy Products Module](images/prod1.png)
-   ![](images/prod2.png)
+![Dairy Products Module](images/prod1.png)
+![](images/prod2.png)
+![](images/prod2.png)
 <hr>
 8.  Admin Order Management Module 
    
