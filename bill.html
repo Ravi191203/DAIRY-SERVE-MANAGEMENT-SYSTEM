@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bill Generation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <style>
+    .header {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .LOGO {
+      height: 100px;
+      width: auto;
+      float: left;
+      margin-left: 30px;
+    }
+
+    .list {
+      float: right;
+      margin-right: 40px;
+      list-style: none;
+    }
+
+    .list li {
+      display: inline-block;
+      margin-right: 30px;
+      margin-top: 30px;
+    }
+
+    .list li a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      font-family: serif;
+      font-weight: bold;
+    }
+
+    .list li:hover {
+      border-bottom: 4px solid yellow;
+      transition: .3s;
+    }
+
+    .main-box {
+      margin-top: 150px;
+    }
+
+    .heading {
+      color: black;
+      font-size: 35px;
+      text-align: center;
+      letter-spacing: 3px;
+      line-height: 10px;
+    }
+
+    .check {
+      font-size: 30px;
+      font-family: 'Brush Script MT', cursive;
+      margin-top: 150px;
+      text-align: center;
+    }
+
+    .farm {
+      padding: 10px;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      border: 2px solid green;
+      background-color: black;
+      color: yellow;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .align {
+      text-align: center;
+    }
+
+    .adjust {
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .btn-custom {
+      background-color: black;
+      color: yellow;
+      border: 2px solid green;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-2">
+          <a href="startpage.php">
+            <img src="images/NATURE-ONE-DAIRY-CORPORATE-LOGO-01.png" alt="logo" class="LOGO img-fluid">
+          </a>
+        </div>
+        <div class="col-md-10">
+          <ul class="list d-flex justify-content-end">
+            <li><a href="startpage.php" class="effect"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="Service.php" class="effect"><i class="fas fa-dolly-flatbed"></i> SERVICES</a></li>
+            <li><a href="aboutus.html" class="effect"><i class="fas fa-info-circle"></i> ABOUT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container main-box">
+    <div class="check">
+      <h4>Welcome to the bill generation portal...</h4>
+      <div class="align">
+        <p>Bill generation for</p>
+        <form class="adjust" action="farmerbill.php">
+          <button type="submit" class="btn btn-custom">Farmer</button>
+        </form>
+        <form class="adjust" action="enter_eid.php">
+          <button type="submit" class="btn btn-custom">Staff Salary Slip</button>
+        </form>
+        <form class="adjust" action="buyerbill.php">
+          <button type="submit" class="btn btn-custom">Buyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <div class="footer alert alert-info">
+    <h5>&copy;2023 Dairy Serve Management System. All Rights Reserved</h5>
+</div>
+<style>
+   .footer {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: black;
+            border-top: 1px solid #dee2e6;
+            margin-top: 20px;
+            font-weight: bold;
+            color: white;
+            
+        } 
+</style>
+</body>
+</html>

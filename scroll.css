@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet');
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+} 
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title span{
+  font-family: 'Anton', 'sans-serif';
+  color: white;
+  text-shadow: 0 0 5px #333;
+  font-size: 46px;
+  letter-spacing: 2px;
+  border-bottom: 4px solid rgb(0, 29, 250);
+}
+
+.scroll {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 40px;
+  right: -80px;
+  border-radius: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(10, 36, 228) 0%, rgb(16, 119, 223) 81.3% );
+  color: #fff;
+  font-size: 44px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 5px 0px #888;
+  transition: 300ms;
+}
+
+.scroll i {
+  margin-top: 10px;
+  text-shadow: 0 0 2px #fff;
+}
+
+.scroll:hover i {
+  animation-name: rotate;
+  animation-duration: 300ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  from {margin-top: 15px}
+  to {margin-top: 5px}
+}
+
+.visible {
+  right: 30px;
+  transition: all 400ms;
+  transform: rotate(360deg)
+}
