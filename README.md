@@ -65,7 +65,8 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 ![](images/sdash2.png)
 ![](images/addnewstaff.png)
 <hr>
- ### Staff
+
+### Staff
  
 - View and edit personal details.
 - Access dashboard.
