@@ -129,7 +129,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 3. Open PHPMyAdmin by navigating to `http://localhost/phpmyadmin`.
 4. Create a new database for the project.
 5. Import the database schema from the provided SQL file into the newly created database.
-6. Update the database configuration in the project files (usually in a `config.php` file) with your database name, username, and password.
+6. Update the database configuration in the project files (usually in a `config.php` or `db_connect.php` file) with your database name, username, and password.
 7. Start the WAMP server and navigate to `http://localhost/your_project_directory` to access the application.
 <hr>
  
