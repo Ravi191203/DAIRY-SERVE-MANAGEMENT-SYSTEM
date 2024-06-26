@@ -59,6 +59,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 ## User Privileges
 
 ### Admin
+![](images/services.png)
 - Full access to all modules and functionalities.
 - Ability to manage users, products, and orders.
 <hr>
