@@ -12,33 +12,33 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 
 1.  Login/Register Module 
    - This module provides a secure login system for users. It includes features for user authentication and access control based on user roles (Admin, Staff, Farmer, Buyer).
-   - ![Login Module](images/login.png)
-   - ![Register](images/register.png)
+     ![Login Module](images/login.png)
+     ![Register](images/register.png)
 <hr>
 2.  Farmer Details Module 
 
    - This module manages the details of farmers associated with the dairy. It allows adding, updating, and viewing farmer profiles, including personal information, farm details, and contact information.
-   -    ![Farmer Details Module](images/farmer.png)
+        ![Farmer Details Module](images/farmer.png)
 <hr>
 3.  Staff Details Module 
    
    - This module handles the details of staff members. It allows for the management of staff profiles, including adding new staff, updating existing profiles, and viewing staff information.
-   - ![Staff Details Module](images/staff.png)
+     ![Staff Details Module](images/staff.png)
 <hr>
 4.  Dairy Animal Details Module 
    
    - This module maintains records of dairy animals. It includes features for adding new animals, tracking health and productivity data, and managing overall animal details.
-   - ![Dairy Animal Details Module](images/animalinfo.png)
+     ![Dairy Animal Details Module](images/animalinfo.png)
 <hr>
 5.  Daily Data Entry Module 
    ![Daily Data Entry Module](images/dailydata.png)
    - This module facilitates daily data entry related to dairy operations. It includes forms for recording milk production, feed usage, health checks, and other routine activities.
-   -  ![Daily Data Entry Module](images/dailydata.png)
+    ![Daily Data Entry Module](images/dailydata.png)
 <hr>
 6.  Bill Module 
    
    - This module generates and manages bills for various transactions. It includes features for creating invoices, tracking payments, and maintaining billing records for customers and suppliers.
-   - ![Bill Module](images/bill.png)
+     ![Bill Module](images/bill.png)
 <hr>
 7.  Dairy Products Module 
    
@@ -50,7 +50,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 8.  Admin Order Management Module 
    
    - This module provides tools for admins to manage orders. It includes features for viewing, updating, and processing customer orders, handling order status, and generating order reports.
-   - ![Admin Order Management Module](images/adminapp.png)
+     ![Admin Order Management Module](images/adminapp.png)
 <hr>
 
 ## User Privileges
@@ -63,6 +63,8 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 ### Staff
 ![DASHBOARD](images/sdash.png)
 ![](images/sdash2.png)
+![](images/addnewstaff.png)
+<hr>
  ### Staff
  
 - View and edit personal details.
@@ -75,7 +77,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 ### Farmer
 ![DASHBOARD](images/fdash.png)
  ### Farmer
- 
+ ![nw](images/addnewfarmer.png)
 - View and edit personal details.
 - Access dashboard.
 - Manage products cart.
