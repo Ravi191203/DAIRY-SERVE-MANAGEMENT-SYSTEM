@@ -147,9 +147,6 @@ Enjoy managing your dairy operations efficiently with the Dairy Serve Management
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
- ## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
- 
 <hr>
+
+************* THANK YOU *************
