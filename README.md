@@ -19,11 +19,14 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 
    - This module manages the details of farmers associated with the dairy. It allows adding, updating, and viewing farmer profiles, including personal information, farm details, and contact information.
         ![Farmer Details Module](images/farmer.png)
+     ![nw](images/addnewfarmer.png)
 <hr>
 3.  Staff Details Module 
    
    - This module handles the details of staff members. It allows for the management of staff profiles, including adding new staff, updating existing profiles, and viewing staff information.
      ![Staff Details Module](images/staff.png)
+     
+![](images/addnewstaff.png)
 <hr>
 4.  Dairy Animal Details Module 
    
@@ -63,11 +66,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 ### Staff
 ![DASHBOARD](images/sdash.png)
 ![](images/sdash2.png)
-![](images/addnewstaff.png)
-<hr>
-
 ### Staff
- 
 - View and edit personal details.
 - Access dashboard.
 - Manage products cart.
@@ -78,7 +77,6 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 ### Farmer
 ![DASHBOARD](images/fdash.png)
  ### Farmer
- ![nw](images/addnewfarmer.png)
 - View and edit personal details.
 - Access dashboard.
 - Manage products cart.
