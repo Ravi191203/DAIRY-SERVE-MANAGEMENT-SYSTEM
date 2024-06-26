@@ -114,7 +114,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 ## Installation Steps
 
 ### WAMP Installation
-1. Download WAMP server from the [official website](http://www.wampserver.com/).
+1. Download WAMP server from the [official website](https://github.com/Ravi191203/DAIRY-SERVE-MANAGEMENT-SYSTEM/tree/main/wamp).
 2. Run the installer and follow the on-screen instructions to install WAMP on your system.
 3. After installation, start the WAMP server.
 <hr>
