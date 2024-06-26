@@ -49,7 +49,7 @@ if ($result && mysqli_num_rows($result) > 0) {
         .out-of-stock {
             position: relative;
             color: red;
-            background-color: rgba(255, 0, 0, 0.1);
+            background-color: rgba(255, 0, 0, 0.3);
             /* Dim background color */
         }
 
@@ -85,7 +85,7 @@ if ($result && mysqli_num_rows($result) > 0) {
             margin-top: 20px;
             font-weight: bold;
             color: white;
-            width:82%;
+            width: 82%;
             margin-left: 150px;
 
         }
@@ -132,6 +132,53 @@ if ($result && mysqli_num_rows($result) > 0) {
             font-size: 36px;
             font-weight: 700;
         }
+
+        /* Hide the default checkbox */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Create a custom checkbox */
+        input[type="checkbox"]+label {
+            position: relative;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        /* Custom checkbox checked state */
+        input[type="checkbox"]:checked+label {
+            background-color: #4caf50;
+            border-color: #4caf50;
+        }
+
+        /* Custom checkmark */
+        input[type="checkbox"]+label::after {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 3px;
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Show the checkmark when checked */
+        input[type="checkbox"]:checked+label::after {
+            opacity: 1;
+        }
+        input{
+            border-radius: 15px;
+        }
     </style>
 </head>
 
@@ -155,8 +202,9 @@ if ($result && mysqli_num_rows($result) > 0) {
                 <div class="mb-3 row">
                     <label for="customer_name" class="col-sm-2 col-form-label"><i class="fa-solid fa-user-secret"></i> Customer Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="customer_name" placeholder="NAME" required>
+                        <input type="text" class="form-control styled-input" name="customer_name" placeholder="NAME" required>
                     </div>
+
                 </div>
                 <div class="mb-3 row">
                     <label for="customer_mobile" class="col-sm-2 col-form-label"><i class="fa-solid fa-mobile-screen-button"></i> Customer Mobile</label>
@@ -185,7 +233,9 @@ if ($result && mysqli_num_rows($result) > 0) {
                                 <td><i class="fas fa-indian-rupee-sign"></i> <?= $product['price']; ?></td>
                                 <td>
                                     <?php if ($product['stock_quantity'] > 0) : ?>
-                                        <input type="checkbox" name="products[<?= $product['product_id']; ?>][id]" value="<?= $product['product_id']; ?>"> <?= $product['product_id']; ?>
+                                        <input type="checkbox" id="checkbox-<?= $product['product_id']; ?>" name="products[<?= $product['product_id']; ?>][id]" value="<?= $product['product_id']; ?>">
+                                        <label for="checkbox-<?= $product['product_id']; ?>"></label>
+                                        <h5><?= $product['product_id']; ?></h5>
                                     <?php else : ?>
                                         Out of Stock
                                     <?php endif; ?>
