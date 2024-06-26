@@ -16,7 +16,7 @@
         }
         section {
             width: 90%;
-            padding: 20px;
+            padding: 30px;
             margin: auto;
             background-color: #fff;
             border-radius: 20px;
@@ -59,8 +59,9 @@
     </style>
 </head>
 <body>
-    <section class="c1">
+    
     <div class="container">
+    <section class="c1">
         <h2 class="text-center">Admin Dashboard</h2>
         </section><br>
         <?php

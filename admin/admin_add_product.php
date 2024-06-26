@@ -56,8 +56,9 @@ table {
     </style>
 </head>
 <body>
-    <section style="background:lightgreen";>
+    
     <div class="container">
+    <section style="background:lightgreen";>
         <h2 class="text-center text-dark mb-4">Add New Product</h2></section><br>
         <section>
         <div class="form-container">

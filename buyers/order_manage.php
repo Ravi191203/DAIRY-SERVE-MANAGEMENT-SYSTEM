@@ -40,9 +40,10 @@
     </style>
 </head>
 <body>
-    <section style="background:lightcoral">
+    
     <div class="container order-management">
-        <h2 class="text-center mb-4">Admin Order Management</h2>
+    <section style="background:white;">
+        <h2 class="text-center mb-2">Admin Order Management</h2>
         </section>
         <br>
         <?php
@@ -92,9 +93,9 @@
                         <?php } ?>
                     </tbody>
                 </table>
-                </section><br>
+            <br>
             </div>
-            <section>
+            
             <h5 class="order-items">Order Items</h5>
             <ul class="list-group">
                 <?php
@@ -118,7 +119,7 @@
                     </li>
                 <?php } ?>
             </ul>
-            </section>
+            
         <?php
         } else {
             echo "<p>No orders found.</p>";
@@ -145,7 +146,7 @@
         }
         ?>
     </div>
-
+    
     <script>
         function printOrder(orderId) {
             const printContent = document.querySelectorAll('tr td:first-child').forEach(td => {
@@ -157,5 +158,6 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
 </body>
 </html>
