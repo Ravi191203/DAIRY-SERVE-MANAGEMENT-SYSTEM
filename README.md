@@ -94,10 +94,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 - View payment history.
 <hr>
  
-## Technologies Used
-<hr>
-
- ## Technologies Used
+ ### Technologies Used
 <hr>
  
 ### Frontend
