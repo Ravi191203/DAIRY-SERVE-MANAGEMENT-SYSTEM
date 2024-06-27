@@ -7,6 +7,7 @@ include '../snippets/head_footer.php';
     <meta charset="utf-8">
     <title>STAFF</title>
     <link rel="stylesheet" href="css/farmer.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style media="screen">
       .main-content{
@@ -15,7 +16,7 @@ include '../snippets/head_footer.php';
       .modal-content{
         width: 50%;
       }
-      #buttom{
+      #button{
         margin: 10px 10px;
 
       }
@@ -111,5 +112,9 @@ include '../snippets/head_footer.php';
   <div class="footer">
         <p>&copy; DIARY.com.All Rights Reserved</p>
     </div>
+    <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
   </body>
 </html>

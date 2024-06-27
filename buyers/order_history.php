@@ -6,6 +6,7 @@
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -18,10 +19,18 @@
             max-width: 100px;
             max-height: 100px;
         }
+        section {
+            padding: 20px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <section>
         <h2 class="text-center mb-4">Order History</h2>
 
         <form method="POST" class="mb-3">
@@ -30,7 +39,7 @@
                 <button type="submit" class="btn btn-primary">View Orders</button>
             </div>
         </form>
-
+        
         <?php
         include 'db_connect.php';
 
@@ -73,7 +82,7 @@
                                 <form method="POST" style="display:inline-block;">
                                     <input type="hidden" name="delete_order_id" value="<?php echo $row['order_id']; ?>">
                                     <input type="hidden" name="delete_product_id" value="<?php echo $row['product_id']; ?>">
-                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                    <button type="submit" class="btn btn-danger btn-sm">Cancel Order</button>
                                 </form>
                                 <button onclick="printOrder(<?php echo $row['order_id']; ?>)" class="btn btn-secondary btn-sm">Print</button>
                             </td>
@@ -106,7 +115,7 @@
                     </li>
                 <?php } ?>
             </ul>
-
+            </section>
         <?php
             } else {
                 echo "<div class='alert alert-warning'>No orders found for order ID: $order_id</div>";
@@ -144,5 +153,10 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+    <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 </html>

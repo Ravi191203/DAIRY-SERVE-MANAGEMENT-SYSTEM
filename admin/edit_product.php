@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Edit Product</title>
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .container {

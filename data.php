@@ -9,6 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Data Entry</title>
+    <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -46,6 +47,10 @@ session_start();
     <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
+    <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.3.3/popper.min.js"></script>
+    <script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+    <script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

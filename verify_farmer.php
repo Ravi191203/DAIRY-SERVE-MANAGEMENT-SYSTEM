@@ -35,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Verify Farmer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
 </head>
 <body class="alert alert-secondary">
 <div class="container mt-5 ">
@@ -62,6 +63,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 </div>
+<script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

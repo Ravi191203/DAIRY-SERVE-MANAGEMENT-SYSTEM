@@ -78,6 +78,7 @@ if ($result && mysqli_num_rows($result) === 1) {
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <style>
         body {
             background: linear-gradient(45deg, pink 0%, lightblue 100%);
@@ -162,5 +163,9 @@ if ($result && mysqli_num_rows($result) === 1) {
         </form>
     <?php endif; ?>
 </div>
+<script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 </html>

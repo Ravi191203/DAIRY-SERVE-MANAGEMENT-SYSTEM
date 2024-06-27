@@ -69,6 +69,7 @@ if ($result->num_rows > 0) {
 <head>
     <meta charset="UTF-8">
     <title>Add Customer</title>
+    <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
   <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
@@ -153,5 +154,9 @@ if ($result->num_rows > 0) {
             <div class="alert alert-info mt-4"><?= $delete_message ?></div>
         <?php endif; ?>
     </div>
+    <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.3.3/popper.min.js"></script>
+    <script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+    <script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 </html>

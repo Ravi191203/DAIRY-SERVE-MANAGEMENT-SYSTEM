@@ -36,6 +36,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 <head>
     <meta charset="UTF-8">
     <title>Dairy Cart</title>
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
     <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />

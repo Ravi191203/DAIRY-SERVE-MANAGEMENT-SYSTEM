@@ -13,6 +13,7 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmer Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
     <link href="assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
   <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
   <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
@@ -66,12 +67,11 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
         <nav class="navbar navbar-expand-lg navbar-dark bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="/dairy-serve-management-system/images/new.png" alt="Logo">
+                    <img src="/dairy-serve-management-system/images/new.png" alt="Logo" >
                 </a>
                 <h1 class="navbar-text text-dark">Dairy Serve Management System</h1>
                 <div class="ml-auto">
                     <a href="/dairy-serve-management-system/logout.php" class="btn btn-info btn-logout">
-                        <img src="/dairy-serve-management-system/images/logout.png" alt="Logout">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </a>
                 </div>
@@ -83,7 +83,7 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
         <div class="col-md-3 mb-4">
             <div class="card">
                 <a href="/dairy-serve-management-system/farmer/farmer_details.php" class="text-decoration-none text-dark">
-                    <img src="/dairy-serve-management-system/images/farmers.jpeg" alt="Farmer">
+                    <img src="/dairy-serve-management-system/images/farmers.jpeg" alt="Farmer" style="width:150px;height:150px;">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-user"></i> Farmer Details</h5>
                     </div>
@@ -93,12 +93,7 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
         <div class="col-md-3 mb-4">
             <div class="card">
                 <a href="/dairy-serve-management-system/farmer/edit_farmer_details.php" class="text-decoration-none text-dark">
-                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/zfzufhzk.json"
-                        trigger="hover"
-                        style="width:150px;height:150px">
-                    </lord-icon>
+                <img src="gif/q9.gif" style="width:150px;height:150px;">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-edit"></i> Edit Details</h5>
                     </div>
@@ -127,6 +122,10 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
         </div>
     </div>
 </div><br><bR>
+<script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.3.3/popper.min.js"></script>
+    <script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+    <script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

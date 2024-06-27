@@ -42,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Verify Staff</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <style>
         .container {
             max-width: 500px;
@@ -101,6 +102,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit" class="btn btn-primary w-100">Verify</button>
     </form>
 </div>
+<script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

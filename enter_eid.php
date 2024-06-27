@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generate Salary Slip</title>
+    <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
     <style>
         body {
             background-color: pink;
@@ -33,5 +34,9 @@
         </form>
     </div>
     </section>
+    <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.3.3/popper.min.js"></script>
+    <script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+    <script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 </html>

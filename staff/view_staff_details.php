@@ -40,6 +40,7 @@ $stmt->close();
     <title>View Staff Details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <style>
         body {
             background-color: #f8f9fa;
@@ -137,5 +138,9 @@ $stmt->close();
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 </html>

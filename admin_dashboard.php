@@ -22,6 +22,9 @@
 
     <a href="logout.php">Logout</a>
 </div>
-
+<script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.3.3/popper.min.js"></script>
+    <script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+    <script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 </html>

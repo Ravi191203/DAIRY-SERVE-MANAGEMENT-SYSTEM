@@ -13,10 +13,12 @@ if (!isset($_SESSION['eid'])) {
 <head>
     <meta charset="UTF-8">
     <title>Staff Options</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <style>
         body {
             background: linear-gradient(135deg, red 0%, blue 100%);
@@ -158,5 +160,9 @@ if (!isset($_SESSION['eid'])) {
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 </html>

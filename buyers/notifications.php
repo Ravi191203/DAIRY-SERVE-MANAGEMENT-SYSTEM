@@ -44,6 +44,7 @@ if (mysqli_num_rows($result) > 0) {
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
 </head>
 <body>
     <div class="container my-4">
@@ -63,6 +64,11 @@ if (mysqli_num_rows($result) > 0) {
     </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+    <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 </html>
 <?php

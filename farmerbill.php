@@ -7,6 +7,7 @@ require_once "connection.php";
   <meta charset="UTF-8">
   <title>Farmer Details</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
   <script type="text/javascript" src="hide.js"></script>
   <style>
     .header {
@@ -215,7 +216,10 @@ require_once "connection.php";
   <div class="footer">
     <p>&copy; 2023 DIARY.com All Rights Reserved</p>
   </div>
-
+  <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
