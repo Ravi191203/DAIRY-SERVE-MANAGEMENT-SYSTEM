@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Add Daily Data Entry</title>
-    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/b4.5.2.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>

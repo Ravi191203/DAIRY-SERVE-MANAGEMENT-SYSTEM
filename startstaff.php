@@ -14,7 +14,7 @@
   <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
   <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
     <style>
-        body {
+         body {
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -26,11 +26,14 @@
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
-            transition: -10px;
+            transition: all 0.5s ease-in-out;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
         }
 
         li {
             justify-content: center;
+            color: black;
         }
 
         .banner-area h2 {
@@ -39,8 +42,9 @@
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
-            transition: -10px;
             color: white;
+            transition: all 0.5s ease-in-out;
+            animation: slideInFromLeft 1s forwards;
         }
 
         .banner-area h2 {
@@ -49,8 +53,8 @@
             margin-left: 50px;
             color: white;
             width: 30%;
-            font-family: lucida;
         }
+
         .navbar ul {
             margin-left: auto;
             margin-right: auto;
@@ -66,13 +70,20 @@
         .menu a:hover {
             color: black;
             border-radius: 20px;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
         }
 
         .products img {
             border-radius: 20px;
             height: 300px;
             width: 100%;
-            box-shadow: 5px 8px blue;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .products img:hover {
+            transform: scale(1.05);
         }
 
         .products h3 {
@@ -80,10 +91,11 @@
             font-size: 30px;
             color: red;
             letter-spacing: 2px;
+            animation: fadeIn 2s;
         }
 
         .products p {
-            font-size: 25px;
+            font-size: 24px;
             line-height: 20px;
             padding-top: 15px;
             font-weight: bold;
@@ -92,11 +104,18 @@
         .products a {
             border: 2px solid green;
             border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .products a:hover {
+            background-color: green;
+            color: white;
         }
 
         .foot-main h3:hover {
             text-decoration: underline;
             transform: scale(1.3);
+            transition: all 0.3s ease;
         }
 
         .emailid {
@@ -114,6 +133,54 @@
             font-size: 40px;
             font-weight: bold;
             margin-top: 10px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         @media (max-width: 768px) {

@@ -49,12 +49,13 @@ if ($result && mysqli_num_rows($result) > 0) {
 
         .out-of-stock {
             position: relative;
-            color: red;
+            
             background-color: rgba(255, 0, 0, 0.1);
             /* Dim background color */
         }
 
         .out-of-stock::after {
+            color:red;
             content: "Shortly it will be available";
             position: absolute;
             top: 50%;
@@ -74,6 +75,7 @@ if ($result && mysqli_num_rows($result) > 0) {
         }
 
         .out-of-stock td {
+            color:red;
             position: relative;
         }
 

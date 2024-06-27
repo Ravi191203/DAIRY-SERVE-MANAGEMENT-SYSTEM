@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin Order Management</title>
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css" />
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
   <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />

@@ -36,8 +36,8 @@ if ($result && mysqli_num_rows($result) > 0) {
 <head>
     <meta charset="UTF-8">
     <title>Dairy Cart</title>
-    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
     <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
     <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
@@ -49,12 +49,13 @@ if ($result && mysqli_num_rows($result) > 0) {
 
         .out-of-stock {
             position: relative;
-            color: red;
-            background-color: rgba(255, 0, 0, 0.3);
+            
+            background-color: rgba(255, 0, 0, 0.1);
             /* Dim background color */
         }
 
         .out-of-stock::after {
+            color:red;
             content: "Shortly it will be available";
             position: absolute;
             top: 50%;
@@ -74,6 +75,7 @@ if ($result && mysqli_num_rows($result) > 0) {
         }
 
         .out-of-stock td {
+            color:red;
             position: relative;
         }
 
@@ -86,11 +88,12 @@ if ($result && mysqli_num_rows($result) > 0) {
             margin-top: 20px;
             font-weight: bold;
             color: white;
-            width: 82%;
-            margin-left: 150px;
 
         }
-
+        .form-control{
+            border-radius: 15px;
+            padding: 10px;
+        }
         header {
             background-color: lightblue;
             border-radius: 20px;
@@ -133,52 +136,9 @@ if ($result && mysqli_num_rows($result) > 0) {
             font-size: 36px;
             font-weight: 700;
         }
-
-        /* Hide the default checkbox */
-        input[type="checkbox"] {
-            display: none;
-        }
-
-        /* Create a custom checkbox */
-        input[type="checkbox"]+label {
-            position: relative;
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            background-color: #f0f0f0;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-
-        /* Custom checkbox checked state */
-        input[type="checkbox"]:checked+label {
-            background-color: #4caf50;
-            border-color: #4caf50;
-        }
-
-        /* Custom checkmark */
-        input[type="checkbox"]+label::after {
-            content: '';
-            position: absolute;
-            left: 8px;
-            top: 3px;
-            width: 6px;
-            height: 12px;
-            border: solid white;
-            border-width: 0 2px 2px 0;
-            transform: rotate(45deg);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        /* Show the checkmark when checked */
-        input[type="checkbox"]:checked+label::after {
-            opacity: 1;
-        }
-        input{
-            border-radius: 15px;
+        .footer{
+            width: 87%;
+            margin-left: 90px;
         }
     </style>
 </head>
@@ -203,9 +163,8 @@ if ($result && mysqli_num_rows($result) > 0) {
                 <div class="mb-3 row">
                     <label for="customer_name" class="col-sm-2 col-form-label"><i class="fa-solid fa-user-secret"></i> Customer Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control styled-input" name="customer_name" placeholder="NAME" required>
+                        <input type="text" class="form-control" name="customer_name" placeholder="NAME" required>
                     </div>
-
                 </div>
                 <div class="mb-3 row">
                     <label for="customer_mobile" class="col-sm-2 col-form-label"><i class="fa-solid fa-mobile-screen-button"></i> Customer Mobile</label>
@@ -234,9 +193,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                                 <td><i class="fas fa-indian-rupee-sign"></i> <?= $product['price']; ?></td>
                                 <td>
                                     <?php if ($product['stock_quantity'] > 0) : ?>
-                                        <input type="checkbox" id="checkbox-<?= $product['product_id']; ?>" name="products[<?= $product['product_id']; ?>][id]" value="<?= $product['product_id']; ?>">
-                                        <label for="checkbox-<?= $product['product_id']; ?>"></label>
-                                        <h5><?= $product['product_id']; ?></h5>
+                                        <input type="checkbox" name="products[<?= $product['product_id']; ?>][id]" value="<?= $product['product_id']; ?>"> <?= $product['product_id']; ?>
                                     <?php else : ?>
                                         Out of Stock
                                     <?php endif; ?>
@@ -305,9 +262,13 @@ if ($result && mysqli_num_rows($result) > 0) {
             document.getElementById('cost').value = totalCost.toFixed(2);
         }
     </script>
-    <div class="footer bg-primary">
+    <div class="footer bg-secondary">
         <h5>&copy;2023 Dairy Serve Management System. All Rights Reserved</h5>
     </div>
+    <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
+<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 
 </html>

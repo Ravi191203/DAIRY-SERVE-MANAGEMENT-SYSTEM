@@ -77,11 +77,7 @@
 	background: #f9f9f9;
 	color: #333;
         }
-        .form-control input:focus,
-        .form-control textarea:focus,
-        .form-control select:focus {
-	border-color: red;
-}
+       
     </style>
 </head>
 

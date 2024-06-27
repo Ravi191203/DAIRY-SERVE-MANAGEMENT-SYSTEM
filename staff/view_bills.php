@@ -14,6 +14,8 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <title>View Bills</title>
     <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap5.0.2.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- DataTables CSS -->
