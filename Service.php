@@ -154,8 +154,8 @@ checkbox.addEventListener("change", () => {
     <a href="startpage.php"><img src="images/new.png" alt="logo" class="LOGO"></a>
     <center><h2 class="">Service</h2></center>
     <ul class="list">
-        <li><a href="startpage.php" class="effect">HOME</a></li>
-        <li><a href="aboutus.html" class="effect">ABOUT US</a></li>
+        <li><a href="startpage.php" class="effect"><i class="fa-solid fa-home" style="color: black;"></i> HOME</a></li>
+        <li><a href="aboutus.html" class="effect"><i class="fas fa-info-circle" style="color: black;"></i> ABOUT US</a></li>
     </ul>
 </div>
 

@@ -158,7 +158,7 @@ if ($result && mysqli_num_rows($result) > 0) {
         <br><br>
         <form action="place_order.php" method="POST">
             <section>
-                <h3 class="text-center text-success mb-4">Dairy Products</h3>
+                <h3 class="text-center text-success mb-4">ENTER YOUR DETAILS</h3>
                 <input type="hidden" name="username" value="<?= $username; ?>"> <!-- Hidden username field -->
                 <div class="mb-3 row">
                     <label for="customer_name" class="col-sm-2 col-form-label"><i class="fa-solid fa-user-secret"></i> Customer Name</label>
@@ -170,6 +170,12 @@ if ($result && mysqli_num_rows($result) > 0) {
                     <label for="customer_mobile" class="col-sm-2 col-form-label"><i class="fa-solid fa-mobile-screen-button"></i> Customer Mobile</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" name="customer_mobile" placeholder="MOBILE" maxlength="10" required>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="customer_email" class="col-sm-2 col-form-label"><i class="fa-solid fa-mobile-screen-button"></i> Customer Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" name="customer_email" placeholder="EMAIL" required>
                     </div>
                 </div>
             </section><br>
@@ -232,6 +238,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                 </div>
                 <div class="d-flex justify-content-between">
                     <button type="submit" class="btn btn-success">Submit Order <i class="fa-solid fa-truck-arrow-right"></i></button>
+                    <button type="back" class="btn btn-secondary"><a href="dashboard.php"> Back</a></button>
                     <button type="reset" class="btn btn-danger"><i class="fa-solid fa-circle-xmark" style="color: #000000;"></i> Clear Order Form</button>
                 </div>
             </section>

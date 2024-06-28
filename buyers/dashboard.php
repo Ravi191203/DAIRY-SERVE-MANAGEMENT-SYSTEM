@@ -145,6 +145,7 @@ unset($_SESSION['new_notification']);
     </nav>
 </header>
 <br>
+
 <!-- Main Content -->
 <section>
     <div class="container">

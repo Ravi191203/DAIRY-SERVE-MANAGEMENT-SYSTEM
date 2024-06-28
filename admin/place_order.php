@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_SESSION['username'];
     $customer_name = $_POST['customer_name'];
     $customer_mobile = $_POST['customer_mobile'];
+    $customer_email = $_POST['customer_email'];
     $payment_mode = $_POST['payment_mode'];
     $transaction_id = isset($_POST['transaction_id']) ? $_POST['transaction_id'] : null;
     $total_cost = $_POST['cost'];
@@ -25,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo '</pre>';
 
     // Insert customer details
-    $query = "INSERT INTO customers (customer_name, customer_mobile) VALUES ('$customer_name', '$customer_mobile')";
+    $query = "INSERT INTO customers (customer_name, customer_mobile, customer_email) VALUES ('$customer_name', '$customer_mobile','$customer_email')";
     if (mysqli_query($conn, $query)) {
         $customer_id = mysqli_insert_id($conn);
 

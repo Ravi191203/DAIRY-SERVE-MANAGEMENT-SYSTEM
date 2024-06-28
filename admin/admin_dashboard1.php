@@ -16,18 +16,32 @@ $users_result = $conn->query($users_query);
 <head>
     <title>Manage Users</title>
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
-  <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
-  <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/bootstrap-5.3.3/b4.5.2.css">
-
+    <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
+    <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/b4.5.2.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+         body{
+            background:lightgrey;
+         }
+        section {
+            padding: 20px;
+            
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
-        <h2><i class="fas fa-tachometer-alt"></i> Manage Users</h2>
+        <section>
+        <h2 class="text-center"><i class="fas fa-tachometer-alt"></i> Manage Users</h2>
+        </section>  <br>
+        <section>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -55,6 +69,7 @@ $users_result = $conn->query($users_query);
                 <?php endwhile; ?>
             </tbody>
         </table>
+        </section>
     </div>
 
     <!-- Edit User Modal -->

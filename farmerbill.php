@@ -6,6 +6,9 @@ require_once "connection.php";
 <head>
   <meta charset="UTF-8">
   <title>Farmer Details</title>
+  <link href="assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
+    <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -81,14 +84,7 @@ require_once "connection.php";
       font-size: 20px;
     }
 
-    .bdy {
-      background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/billcc.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: white;
-      min-height: 100vh;
-      padding-bottom: 60px;
-    }
+   
 
     .footer {
       background-color: black;
@@ -96,9 +92,9 @@ require_once "connection.php";
       text-align: center;
       padding: 20px;
       position: relative;
-      bottom: 0;
+      margin-bottom: 0;
       width: 100%;
-      margin-top: 20px;
+     
     }
 
     .alert {
@@ -225,7 +221,7 @@ require_once "connection.php";
 
   <!-- Footer -->
   <div class="footer">
-    <p>&copy; 2024 DIARY.com All Rights Reserved</p>
+    <p>&copy; 2023 DIARY SERVE MANAGEMENT SYSTEM. All Rights Reserved</p>
   </div>
   <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
   <script src="css/bootstrap-5.3.3/popper.min.js"></script>
