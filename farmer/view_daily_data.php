@@ -16,6 +16,9 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
 }
+
+// Initialize total cost
+$total_cost = 0;
 ?>
 
 <!DOCTYPE html>
@@ -26,9 +29,9 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Daily Data</title>
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
-  <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
-  <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
+    <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
+    <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -103,12 +106,15 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
                     <th scope="col">Fat (%)</th>
                     <th scope="col">SNF (%)</th>
                     <th scope="col">Rate (per liter)</th>
+                    <th scope="col">Cost</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
                 $count = 1;
                 while ($row = mysqli_fetch_assoc($result)) {
+                    $cost = $row['milk_qty'] * $row['rate'];
+                    $total_cost += $cost;
                     echo "<tr>";
                     echo "<th scope='row'>" . $count . "</th>";
                     echo "<td>" . $row['date'] . "</td>";
@@ -116,18 +122,22 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
                     echo "<td>" . $row['fat'] . "</td>";
                     echo "<td>" . $row['snf'] . "</td>";
                     echo "<td>" . $row['rate'] . "</td>";
+                    echo "<td>" . number_format($cost, 2) . "</td>";
                     echo "</tr>";
                     $count++;
                 }
                 ?>
             </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="6">Total Cost(milk_qty * rate)</th>
+                    <th><?php echo number_format($total_cost, 2); ?></th>
+                </tr>
+            </tfoot>
         </table>
+        <button class="btn btn-primary"><a href="farmedatabill.php" style="color: white; text-decoration: none;">SUBMIT</a></button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
-<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
-<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
-<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@ require_once "connection.php";
   <title>Farmer Details</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script type="text/javascript" src="hide.js"></script>
   <style>
     .header {
@@ -19,10 +20,11 @@ require_once "connection.php";
       color: white;
       text-align: center;
       z-index: 1000;
+      padding: 10px 0;
     }
 
     .LOGO {
-      height: 100px;
+      height: 80px;
       width: auto;
       float: left;
       margin-left: 30px;
@@ -54,7 +56,10 @@ require_once "connection.php";
     }
 
     .main-box {
-      margin-top: 120px;
+      margin-top: 140px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
     }
 
     .heading {
@@ -81,6 +86,8 @@ require_once "connection.php";
       background-repeat: no-repeat;
       background-size: cover;
       color: white;
+      min-height: 100vh;
+      padding-bottom: 60px;
     }
 
     .footer {
@@ -91,6 +98,10 @@ require_once "connection.php";
       position: relative;
       bottom: 0;
       width: 100%;
+      margin-top: 20px;
+    }
+
+    .alert {
       margin-top: 20px;
     }
   </style>
@@ -117,19 +128,19 @@ require_once "connection.php";
 
   <div class="container main-box">
     <form class="bill" action="farmerbill.php" method="POST">
-      <div class="form-group">
-        <label for="fid">Farmer ID:</label>
+      <div class="form-group text-dark">
+        <label for="fid"><i class="fas fa-id-card"></i> Farmer ID:</label>
         <input type="text" class="form-control" name="fid" placeholder="Enter farmer id" required>
       </div>
-      <div class="form-group">
-        <label for="from-date">From-Date:</label>
+      <div class="form-group text-dark">
+        <label for="from-date"><i class="fas fa-calendar-alt"></i> From-Date:</label>
         <input type="date" class="form-control" name="from-date" required>
       </div>
-      <div class="form-group">
-        <label for="to-date">To-Date:</label>
+      <div class="form-group text-dark">
+        <label for="to-date"><i class="fas fa-calendar-alt"></i> To-Date:</label>
         <input type="date" class="form-control" name="to-date" required>
       </div>
-      <button type="submit" class="btn btn-success submitf" name="billinfo">Submit</button>
+      <button type="submit" class="btn btn-success submitf" name="billinfo"><i class="fas fa-paper-plane"></i> Submit</button>
       <hr>
     </form>
 
@@ -154,20 +165,20 @@ require_once "connection.php";
     ?>
       <div class="design">
         <form id="receipt" action="final.php" method="POST" class="mt-4">
-          <div class="form-group">
-            <label for="fid">Farmer ID:</label>
+          <div class="form-group text-dark">
+            <label for="fid"><i class="fas fa-id-card"></i> Farmer ID:</label>
             <input type="text" class="form-control" name="fid" value="<?php echo $row['id']; ?>" readonly>
           </div>
-          <div class="form-group">
-            <label for="fname">Farmer Name:</label>
+          <div class="form-group text-dark">
+            <label for="fname"><i class="fas fa-user"></i> Farmer Name:</label>
             <input type="text" class="form-control" name="fname" value="<?php echo $row['fname']; ?>" readonly>
           </div>
-          <div class="form-group">
-            <label for="type">Milk Type:</label>
+          <div class="form-group text-dark">
+            <label for="type"><i class="fas fa-tint"></i> Milk Type:</label>
             <input type="text" class="form-control" name="type" value="<?php echo $row['milk_type']; ?>" readonly>
           </div>
-          <div class="form-group">
-            <label for="cost">Cost per liter:</label>
+          <div class="form-group text-dark">
+            <label for="cost"><i class="fas fa-dollar-sign"></i> Cost per liter:</label>
             <input type="text" class="form-control" name="cost" value="<?php
               $milk_type = strtolower($row['milk_type']);
               $price_query = ($milk_type == "cow") ?
@@ -183,12 +194,12 @@ require_once "connection.php";
               }
             ?>" readonly>
           </div>
-          <div class="form-group">
-            <label for="sum">Net Quantity:</label>
+          <div class="form-group text-dark">
+            <label for="sum"><i class="fas fa-balance-scale"></i> Net Quantity:</label>
             <input type="text" class="form-control" name="sum" value="<?php echo $row['total_quantity']; ?>" readonly>
           </div>
-          <div class="form-group">
-            <label for="amount">Net Amount:</label>
+          <div class="form-group text-dark">
+            <label for="amount"><i class="fas fa-money-bill-wave"></i> Net Amount:</label>
             <input type="text" class="form-control" name="amount" value="<?php
               if (isset($price_row['product_cost'])) {
                 echo $row['total_quantity'] * $price_row['product_cost'];
@@ -197,7 +208,7 @@ require_once "connection.php";
               }
             ?>" readonly>
           </div>
-          <button type="submit" class="btn btn-primary submitf" name="final">BILL</button>
+          <button type="submit" class="btn btn-primary submitf" name="final"><i class="fas fa-receipt"></i> BILL</button>
         </form>
       </div>
     <?php
@@ -214,12 +225,12 @@ require_once "connection.php";
 
   <!-- Footer -->
   <div class="footer">
-    <p>&copy; 2023 DIARY.com All Rights Reserved</p>
+    <p>&copy; 2024 DIARY.com All Rights Reserved</p>
   </div>
   <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
-<script src="css/bootstrap-5.3.3/popper.min.js"></script>
-<script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
-<script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
+  <script src="css/bootstrap-5.3.3/popper.min.js"></script>
+  <script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+  <script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="scroll.css">
     <link rel="stylesheet" href="input.css">
-    <link href="assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
-    <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
-    <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+   
     <style>
         body {
             margin: 0;
@@ -233,6 +231,7 @@
                         <li class="nav-item"><a href="aboutus.html" class="nav-link"><i class="fas fa-info-circle" style="color: black;"></i> About Us</a></li>
                         <li class="nav-item"><a href="gallery.html" class="nav-link"><i class="fa fa-picture-o" style="color: black;"></i> Gallery</a></li>
                         <li class="nav-item"><a href="admin/view_messages.php" class="nav-link"><i class="fa fa-comment" style="color: black;"></i> View Messages</a></li>
+                        <li class="nav-item"><a href="admin/admin_dashboard1.php" class="nav-link"><i class="fa-solid fa-user-tie"></i></i> Manage Users</a></li>
 
                     </ul>
                 </div>

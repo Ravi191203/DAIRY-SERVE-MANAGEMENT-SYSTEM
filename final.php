@@ -18,50 +18,65 @@ if (isset($_POST['final'])) {
     if ($query_run) {
         class myPDF extends FPDF {
             function header() {
-                $this->Image("images/NATURE-ONE-DAIRY-CORPORATE-LOGO-01.png", 10, 6);
-                $this->SetFont("Courier", "B", 20);
-                $this->Cell(0, 10, "Farmer Billing", 0, 1, 'C');
+                $this->Image("images/NATURE-ONE-DAIRY-CORPORATE-LOGO-01.png", 10, 6, 30);
+                $this->SetFont("Helvetica", "B", 20);
+                $this->Cell(0, 10, "Farmer Invoice", 0, 1, 'C');
                 $this->Ln(10);
             }
 
             function footer() {
                 $this->SetY(-15);
-                $this->SetFont("Courier", "I", 12);
-                $this->Cell(0, 10, "Page " . $this->PageNo(), 0, 0, 'C');
+                $this->SetFont("Helvetica", "I", 12);
+                $this->Cell(0, 10, "DSMS | Page " . $this->PageNo(), 0, 0, 'C');
             }
         }
 
         $pdf = new myPDF();
         $pdf->AddPage();
-        $pdf->SetFont("Courier", "B", 16);
+        $pdf->SetFont("Helvetica", "", 16);
+    
+        $pdf->Cell(0, 10, "Date: " . date("d-m-Y"), 0, 1, 'R');
+        $pdf->Cell(0, 10, "Time: " . date("H:i:s"), 0, 1, 'R');
+       
 
-        $pdf->Cell(50, 10, "Date:", 0, 0);
-        $pdf->Cell(0, 10, date("d-m-Y"), 0, 1);
-        $pdf->Cell(50, 10, "Time:", 0, 0);
-        $pdf->Cell(0, 10, date("H:i:s"), 0, 1);
+        $pdf->SetFont("Helvetica", "B", 16);
         $pdf->Cell(50, 10, "Farmer ID:", 0, 0);
+        $pdf->SetFont("Helvetica", "", 16);
         $pdf->Cell(0, 10, $fid, 0, 1);
 
-        $pdf->Line(10, 40, 200, 40);
-        $pdf->Ln(10);
+ 
+        
 
+        $pdf->SetFont("Helvetica", "B", 16);
         $pdf->Cell(50, 10, "Bill ID:", 0, 0);
+        $pdf->SetFont("Helvetica", "", 16);
         $pdf->Cell(0, 10, "234", 0, 1);
-        $pdf->Cell(50, 10, "Farmer ID:", 0, 0);
-        $pdf->Cell(0, 10, $fid, 0, 1);
+
+        $pdf->SetFont("Helvetica", "B", 16);
         $pdf->Cell(50, 10, "Farmer Name:", 0, 0);
+        $pdf->SetFont("Helvetica", "", 16);
         $pdf->Cell(0, 10, $fname, 0, 1);
+
+        $pdf->SetFont("Helvetica", "B", 16);
         $pdf->Cell(50, 10, "Milk Type:", 0, 0);
+        $pdf->SetFont("Helvetica", "", 16);
         $pdf->Cell(0, 10, $type, 0, 1);
+
+        $pdf->SetFont("Helvetica", "B", 16);
         $pdf->Cell(50, 10, "Cost per Litre:", 0, 0);
+        $pdf->SetFont("Helvetica", "", 16);
         $pdf->Cell(0, 10, $cost, 0, 1);
 
-        $pdf->Line(10, 90, 200, 90);
-        $pdf->Ln(10);
+      
 
-        $pdf->Cell(0, 10, "Quantity Supplied =", 0, 1, 'R');
+        $pdf->SetFont("Helvetica", "B", 11);
+        $pdf->Cell(0    ,8, "Quantity Supplied =", 0, 1, 'R');
+        $pdf->SetFont("Helvetica", "", 11);
         $pdf->Cell(0, 10, $sum, 0, 1, 'R');
+
+        $pdf->SetFont("Helvetica", "B", 11);
         $pdf->Cell(0, 10, "Net Amount =", 0, 1, 'R');
+        $pdf->SetFont("Helvetica", "", 11);
         $pdf->Cell(0, 10, $amount, 0, 1, 'R');
 
         $pdf->Output();

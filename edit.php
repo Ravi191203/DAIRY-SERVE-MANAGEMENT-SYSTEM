@@ -1,32 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Update</title>
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/farmer.css">
-    <style media="screen">
-        .delete-icon {
-            position: absolute;
-            padding: 4px 5px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-left: 50px;
-        }
-
-        .delete-icon:hover {
-            transform: scale(1.2);
-            opacity: 0.8;
-        }
-
-        u {
-            text-decoration: none;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Farmer</title>
+    <link href="assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
+    <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap-5.3.3/b4.5.2.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 <?php
-
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -71,33 +57,44 @@ if (isset($_POST['updatefarmerdata'])) {
 
 $conn->close();
 ?>
-<form class="modal-content animate" action="" method="POST">
-    <h3><b><u>Update Customer Details</u></b> <a class="delete-icon" href="farmer.php"><i class="fas fa-arrow-circle-left"></i></a></h3>
-    <div class="container">
-        <label for="fname">First Name <sup>*</sup> </label>
-        <input type="text" name="fname" value="<?php echo htmlspecialchars($arrdata['fname']); ?>" placeholder="first name" size="5" required/>
-        <br>
-        <label for="ph">Phone number<sup>*</sup> </label>
-        <input type="text" name="ph" value="<?php echo htmlspecialchars($arrdata['ph']); ?>" placeholder="Phone Number" maxlength="10" required/>
-        <br>
-        <label for="f_vid">Village ID<sup>*</sup> </label>
-        <input type="number" name="f_vid" value="<?php echo htmlspecialchars($arrdata['f_vid']); ?>" placeholder="Village ID" maxlength="2" required/>
-        <br>
-        <label for="milk_type">Milk Type<sup>*</sup> </label>
-        <input type="text" name="milk_type" value="<?php echo htmlspecialchars($arrdata['milk_type']); ?>" placeholder="cow or Buffalo" required/>
-        <br>
-        <label for="min_litre">Minimum Litre<sup>*</sup> </label>
-        <input type="number" name="min_litre" value="<?php echo htmlspecialchars($arrdata['min_litre']); ?>" placeholder="/day" required/>
-        <br>
-        <label for="animalID">Animal Health ID<sup>*</sup> </label>
-        <input type="text" name="animalID" value="<?php echo htmlspecialchars($arrdata['animalID']); ?>" placeholder="Issued by Health Ministry" maxlength="5" required/>
-        <br>
-        <input type="submit" name="updatefarmerdata" class="submit-btn-add" value="Update">
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h3><b>Update Farmer Details</b> <a class="btn btn-outline-secondary float-right" href="farmer.php"><i class="fas fa-arrow-circle-left"></i> Back</a></h3>
+        </div>
+        <div class="card-body">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="fname"><i class="fas fa-user"></i> First Name <sup>*</sup></label>
+                    <input type="text" class="form-control" name="fname" value="<?php echo htmlspecialchars($arrdata['fname']); ?>" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="ph"><i class="fas fa-phone"></i> Phone Number <sup>*</sup></label>
+                    <input type="text" class="form-control" name="ph" value="<?php echo htmlspecialchars($arrdata['ph']); ?>" placeholder="Phone Number" maxlength="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="f_vid"><i class="fas fa-map-marker-alt"></i> Village ID <sup>*</sup></label>
+                    <input type="number" class="form-control" name="f_vid" value="<?php echo htmlspecialchars($arrdata['f_vid']); ?>" placeholder="Village ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="milk_type"><i class="fas fa-cow"></i> Milk Type <sup>*</sup></label>
+                    <input type="text" class="form-control" name="milk_type" value="<?php echo htmlspecialchars($arrdata['milk_type']); ?>" placeholder="Cow or Buffalo" required>
+                </div>
+                <div class="form-group">
+                    <label for="min_litre"><i class="fas fa-tint"></i> Minimum Litre <sup>*</sup></label>
+                    <input type="number" class="form-control" name="min_litre" value="<?php echo htmlspecialchars($arrdata['min_litre']); ?>" placeholder="/day" required>
+                </div>
+                <div class="form-group">
+                    <label for="animalID"><i class="fas fa-id-badge"></i> Animal Health ID <sup>*</sup></label>
+                    <input type="text" class="form-control" name="animalID" value="<?php echo htmlspecialchars($arrdata['animalID']); ?>" placeholder="Issued by Health Ministry" maxlength="5" required>
+                </div>
+                <button type="submit" name="updatefarmerdata" class="btn btn-primary"><i class="fas fa-save"></i> Update</button>
+            </form>
+        </div>
     </div>
-</form>
-<script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
-    <script src="css/bootstrap-5.3.3/popper.min.js"></script>
-    <script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
-    <script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
+</div>
+<script src="css/bootstrap-5.3.3/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

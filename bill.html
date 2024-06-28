@@ -133,9 +133,19 @@
         <form class="adjust" action="enter_eid.php">
           <button type="submit" class="btn btn-custom">Staff Salary Slip</button>
         </form>
-        <form class="adjust" action="buyerbill.php">
-          <button type="submit" class="btn btn-custom">Buyer</button>
+       
+        <form class="adjust" action="admin/admin_form.php">
+          <button type="submit" class="btn btn-custom">Milk Collection Data For Farmer</button>
         </form>
+        <!-- Admin Interface -->
+<form action="generate_bill.php" method="GET" class="mt-3">
+  <div class="form-group">
+      <label for="username">Enter Username to Generate Invoice for Buyers:</label>
+      <input type="text" id="username" name="username" class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Generate Bill</button>
+</form>
+
       </div>
     </div>
   </div>

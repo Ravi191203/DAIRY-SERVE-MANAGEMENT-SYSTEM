@@ -24,6 +24,10 @@
         .header .LOGO {
             height: 100px;
         }
+        p,a{
+            color:blue;
+            text-decoration:none;
+        }
         .header .list {
             list-style: none;
             display: flex;
