@@ -252,11 +252,11 @@
                     <a href="#" class="btn btn-outline-light">Read More</a>
                 </div>
                 <div class="col-md-4 foot-main">
-                    <h3>Find Us</h3>
-                    <p>BANASHANKARI</p>
-                    <p>NEAR BANASHANKARI TTMC</p>
-                    <p>BANGALORE-560082</p>
-                    <p>TELEPHONE: 08518-232205</p>
+                    <h3>Find Us</h3><br>
+                    <p>SIDDARTHA NAGAR</p>
+                    <p>CHAMUNDI VIHAR LAYOUT</p>
+                    <p>MYSURU, KARNATAKA 570011</p>
+                    <p>Phone: 0821 247 3933</p>
                 </div>
                 <div class="col-md-4 foot-main">
                     <h3>Contact Us</h3>

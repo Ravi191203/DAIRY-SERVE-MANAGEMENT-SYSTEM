@@ -170,7 +170,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
                 <div class="card bg-light text-center transition-all">
                     <div class="card-body position-relative">
                         <a href="/dairy-serve-management-system/staff/view_staff_details.php">
-                            <img src="/dairy-serve-management-system/gif/q4.gif" alt="Staff" style="width:150px;height:150px;">
+                            <img src="/dairy-serve-management-system/gif/q12.gif" alt="Staff" style="width:150px;height:150px;">
                             <div class="card-overlay">
                                 <h5>Logged in Staff Details</h5>
                             </div>
