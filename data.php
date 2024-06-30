@@ -19,6 +19,29 @@ session_start();
         .container{
             width:50%;
         }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -53,7 +76,7 @@ session_start();
         </div>
     </div>
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer class="footer bg-dark text-white text-center py-3 mt-5">
         <p>&copy; 2024 Your Company. All rights reserved. <i class="fas fa-heart"></i></p>
     </footer>
     <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>

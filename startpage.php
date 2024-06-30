@@ -232,6 +232,7 @@
                         <li class="nav-item"><a href="gallery.html" class="nav-link"><i class="fa fa-picture-o" style="color: black;"></i> Gallery</a></li>
                         <li class="nav-item"><a href="admin/view_messages.php" class="nav-link"><i class="fa fa-comment" style="color: black;"></i> View Messages</a></li>
                         <li class="nav-item"><a href="admin/admin_dashboard1.php" class="nav-link"><i class="fa-solid fa-user-tie"></i></i> Manage Users</a></li>
+                        <li class="nav-item"><a href="admin/Announcement.php" class="nav-link"><i class="fa-solid fa-user-tie"></i></i> Announcement for Users</a></li>
 
                     </ul>
                 </div>

@@ -6,12 +6,12 @@
     <title>REGISTER FORM</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <link href="assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
-  <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
-  <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
+    <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
+    <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
     <link rel="icon" href="/dairy-serve-management-system/images/new.png" type="image/icon type">
     <style>
-    body {
+        body {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(images/mainimg.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -20,68 +20,71 @@
             justify-content: center;
             height: 100vh;
         }
-        
+
         .card {
             animation: fadeIn 1s ease-in-out;
             border-radius: 15px;
-            animation: fadeIn 1s ease-in-out;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 400px;
             margin: 10% auto;
-            border: 2px solid transparent;
             background: #fff;
-            border-radius: 20px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             padding: 30px;
         }
-        .x{
+
+        .x {
             border-radius: 20px;
         }
+
         .card-header {
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
         }
+
         .btn-primary {
             transition: background-color 0.3s, transform 0.3s;
         }
+
         .btn-primary:hover {
             background-color: #0056b3;
             transform: scale(1.05);
         }
+
         .form-control {
             border-radius: 5px;
             transition: border-color 0.3s, box-shadow 0.3s;
         }
+
         .form-control:focus {
             border-color: #007bff;
             box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
         }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        .form-control{
+
+        .form-control {
             width: 100%;
-	padding: 12px;
-	margin: auto;
-	border: 1px solid #ddd;
-	border-radius: 12px;
-	background: #f9f9f9;
-	color: #333;
+            padding: 12px;
+            margin: auto;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            background: #f9f9f9;
+            color: #333;
         }
-       
     </style>
 </head>
 
-<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(images/mainimg.jpeg); background-repeat: no-repeat; background-size: 1500px 900px;">
+<body>
     <div class="container">
         <div class="row justify-content-center align-items-center" style="height: 100vh;">
             <div class="col-lg-6 col-md-8 col-sm-10">
@@ -96,12 +99,15 @@
                                 <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username" required>
                             </div>
                             <div class="mb-3">
+                                <label for="email" class="form-label"><i class="fa-solid fa-envelope"></i> Email:</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
+                            </div>
+                            <div class="mb-3">
                                 <label for="password" class="form-label"><i class="fa-solid fa-lock"></i> Password:</label>
                                 <input type="password" class="form-control" name="password" id="password" placeholder="Enter password" required>
                             </div>
                             <div class="mb-3">
-                                <label for="role" class="form-label"><i class="fas fa-user-shield"></i>
-                                 Role:</label>
+                                <label for="role" class="form-label"><i class="fas fa-user-shield"></i> Role:</label>
                                 <select class="form-select" name="role" id="role" required>
                                     <option value="">-- Select --</option>
                                     <option value="farmer">Farmer</option>
@@ -117,6 +123,7 @@
                         <?php
                         if (isset($_POST['register'])) {
                             $username = $_POST['username'];
+                            $email = $_POST['email'];
                             $password = md5($_POST['password']); // Hash the password for security (note: use a stronger hashing method in production)
                             $role = $_POST['role'];
 
@@ -132,7 +139,7 @@
                             if ($result->num_rows > 0) {
                                 echo '<div class="alert alert-danger text-center" role="alert">Username already exists. Please try with a different one.</div>';
                             } else {
-                                $sql = "INSERT INTO users (username, password, role) VALUES ('$username', '$password', '$role')";
+                                $sql = "INSERT INTO users (username, email, password, role) VALUES ('$username', '$email', '$password', '$role')";
                                 if ($conn->query($sql) === TRUE) {
                                     echo '<div class="alert alert-success text-center" role="alert">Registration successful! Redirecting...</div>';
 
@@ -167,9 +174,9 @@
         </div>
     </div>
     <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
-<script src="css/bootstrap-5.3.3/popper.min.js"></script>
-<script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
-<script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
+    <script src="css/bootstrap-5.3.3/popper.min.js"></script>
+    <script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+    <script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
