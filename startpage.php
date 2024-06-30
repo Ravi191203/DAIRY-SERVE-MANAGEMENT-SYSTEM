@@ -331,7 +331,7 @@
                         <i class="fab fa-github fa-2x"></i>
                     </a>
                     <a href="https://rrgs_dev.com" class="text-decoration-none text-white mx-2">
-                        <i class="fab fa-google fa-2x"></i>
+                        <img src="gif/go.svg">
                     </a>
                 </div>
             </div>
