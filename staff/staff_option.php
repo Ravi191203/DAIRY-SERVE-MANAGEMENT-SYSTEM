@@ -155,7 +155,7 @@ if (!isset($_SESSION['eid'])) {
 <!-- Footer -->
 <footer class="footer bg-dark text-white mt-5 py-3">
     <div class="container text-center">
-        <p>&copy; 2024 Dairy Management System. All Rights Reserved.</p>
+        <p>&copy; 2023 Dairy Serve Management System. All Rights Reserved.</p>
     </div>
 </footer>
 

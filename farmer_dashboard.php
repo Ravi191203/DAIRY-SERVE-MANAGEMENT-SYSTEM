@@ -59,6 +59,9 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
             border-radius: 25px;
             width: 100%;
         }
+        h1{
+            margin-left: 100px;
+        }
     </style>
 </head>
 <body>
@@ -68,8 +71,8 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="/dairy-serve-management-system/images/new.png" alt="Logo" >
-                </a>
-                <h1 class="navbar-text text-dark">Dairy Serve Management System</h1>
+               
+                <h1 class="navbar-text text-dark"><center>Dairy Serve Management System</center></h1> </a>
                 <div class="ml-auto">
                     <a href="/dairy-serve-management-system/logout.php" class="btn btn-info btn-logout">
                         <i class="fas fa-sign-out-alt"></i> Logout

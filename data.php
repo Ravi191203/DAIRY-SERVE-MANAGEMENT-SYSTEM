@@ -77,7 +77,7 @@ session_start();
     </div>
     <!-- Footer -->
     <footer class="footer bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2024 Your Company. All rights reserved. <i class="fas fa-heart"></i></p>
+        <p>&copy; 2023 Your Company. All rights reserved. <i class="fas fa-heart"></i></p>
     </footer>
     <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.3.3/popper.min.js"></script>

@@ -23,7 +23,6 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             color: white;
         }
         .card {
-            
             border-radius: 20px;
             transition: transform 0.5s, box-shadow 0.5s;
         }
@@ -110,6 +109,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
         }
 
         .card-overlay {
+            border-radius: 10px;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -126,7 +126,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-fill-color: transparent;
+            
         }
         .card:hover .card-overlay {
             opacity: 1;
@@ -150,7 +150,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
     <!-- Main Content -->
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center">
-        <center><h2 class=" gradient-text">Staff Dashboard</h2></center>
+        <center><h2 class=" gradient-text">STAFF DASHBOARD</h2></center>
             <a href="/dairy-serve-management-system/staff/staff_option.php" class="btn btn-outline-secondary">Back</a>
         </div>
         <div class="row mt-1">
