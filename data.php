@@ -1,5 +1,5 @@
 <?php
-include 'snippets/head_footer.php';
+
 require_once 'connection.php';
 session_start();
 ?>
@@ -42,9 +42,28 @@ session_start();
                 transform: translateY(0);
             }
         }
+        body{
+            background-color: lightgrey;
+        }
+        section {
+            width:100%;
+            padding: 20px;
+            margin: auto;
+            color:white;
+            font-family: 'Brush Script MT', cursive;
+            background-color: black;
+            border-radius: 20px;
+            justify-content: center;
+            align:center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
+    <section>
+    <header>
+        <h3><center>DSMS</center></h3>
+    </header></section>
     <div class="container mt-5">
         <div class="card shadow-sm">
             <div class="card-header text-center bg-primary text-white">
@@ -77,7 +96,7 @@ session_start();
     </div>
     <!-- Footer -->
     <footer class="footer bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2023 Your Company. All rights reserved. <i class="fas fa-heart"></i></p>
+        <p>&copy; 2023 DSMS. All rights reserved. <i class="fas fa-heart"></i></p>
     </footer>
     <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.3.3/popper.min.js"></script>

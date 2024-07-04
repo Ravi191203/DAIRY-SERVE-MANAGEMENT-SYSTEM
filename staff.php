@@ -1,4 +1,4 @@
-<?php include 'snippets/head_footer.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -80,12 +80,26 @@
                 transform: translateY(0);
             }
         }
+        body{
+            background-color: lightgrey;
+            margin:10px;
+        }
+        section {
+            width: 100%;
+            padding: 20px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
-<body>
+<body><br>
+    <section>
 <div class="container main-content">
-    <h2 class="text-center mb-4">STAFF Management</h2>
-
+    <h2 class="text-center mb-4">Staff Management</h2>
+    </section><br>
+    <section>
     <button onclick="document.getElementById('id03').style.display='block'" class="btn btn-primary mb-3">
         <i class="fas fa-user-plus"></i> Add STAFF
     </button>
@@ -127,7 +141,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Fetch Details -->
     <div class="card">
         <div class="card-body">
@@ -188,7 +202,7 @@
         </div>
     </div>
 </div>
-
+</section>
 <div class="footer mt-5 text-center">
     <p>&copy; 2023 Dairy Serve Management System. All Rights Reserved</p>
 </div>
