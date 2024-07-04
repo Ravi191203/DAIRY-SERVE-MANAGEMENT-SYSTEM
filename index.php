@@ -156,6 +156,7 @@ if (isset($_POST['login'])) {
                             </div><br>
                         </form>
                         <p class="mt-3 text-center"><b><i class="fa fa-user-plus fa-beat-fade"></i> Not registered yet? <a href="register.php">Register here</a></b></p>
+                        
                     </div>
                 </div>
             </div>

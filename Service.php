@@ -238,6 +238,30 @@ checkbox.addEventListener("change", () => {
                 </div>
             </a>
         </div>
+        <div class="col-md-4 mb-4">
+            <a href="admin/view_messages.php">
+                <div class="card">
+                <center><img src="gif/q10.gif" alt="animal info"  stroke="bold" style="width:150px;height:150px;"></center>
+                    <p>View Messages Sent from Users</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <a href="admin/admin_dashboard1.php">
+                <div class="card">
+                <center><img src="gif/q11.gif" alt="animal info"  stroke="bold" style="width:150px;height:150px;"></center>
+                    <p>Manage All <br>Users</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <a href="admin/Announcement.php">
+                <div class="card">
+                <center><img src="gif/q12.gif" alt="animal info"  stroke="bold" style="width:150px;height:150px;"></center>
+                    <p>Any New Announcements For All Users </p>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
 

@@ -100,6 +100,19 @@
       font-size: 20px;
       font-family: Arial, sans-serif;
     }
+    .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .footer p {
+            margin: 0;
+        }
   </style>
 </head>
 <body>
@@ -173,6 +186,16 @@
             color: white;
             
         } 
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 </style>
 </body>
 </html>

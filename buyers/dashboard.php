@@ -31,7 +31,7 @@ unset($_SESSION['new_notification']);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dairy Management System</title>
+    <title>Dairy Serve Management System</title>
     <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />

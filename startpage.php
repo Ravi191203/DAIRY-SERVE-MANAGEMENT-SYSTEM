@@ -230,9 +230,6 @@
                         <li class="nav-item"><a href="Service.php" class="nav-link"><i class="fa fa-shopping-cart" style="color: black;"></i> Services</a></li>
                         <li class="nav-item"><a href="aboutus.html" class="nav-link"><i class="fas fa-info-circle" style="color: black;"></i> About Us</a></li>
                         <li class="nav-item"><a href="gallery.html" class="nav-link"><i class="fa fa-picture-o" style="color: black;"></i> Gallery</a></li>
-                        <li class="nav-item"><a href="admin/view_messages.php" class="nav-link"><i class="fa fa-comment" style="color: black;"></i> View Messages</a></li>
-                        <li class="nav-item"><a href="admin/admin_dashboard1.php" class="nav-link"><i class="fa-solid fa-user-tie"></i></i> Manage Users</a></li>
-
                     </ul>
                 </div>
             </div>
@@ -335,7 +332,7 @@
                         <i class="fab fa-github fa-2x"></i>
                     </a>
                     <a href="https://rrgs_dev.com" class="text-decoration-none text-white mx-2">
-                        <i class="fab fa-google fa-2x"></i>
+                    <i class="fab fa-google fa-2x"></i>
                     </a>
                 </div>
             </div>
