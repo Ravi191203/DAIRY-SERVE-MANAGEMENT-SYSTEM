@@ -33,6 +33,17 @@ if ($result) {
     <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css">
     <style>
         body {
+            background: linear-gradient(to right, #f3f4f6, black);
+            color: #333;
+            background-size: 200% 200%;
+            animation: gradientBackground 10s ease-in-out infinite;
+        }
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        body {
             background-color: #f8f9fa;
             transition: background-color 0.5s ease;
         }

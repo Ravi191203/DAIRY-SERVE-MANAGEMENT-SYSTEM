@@ -24,7 +24,7 @@
         }
 
         .banner-area {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('images/mainimg.jpeg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('images/a6.jpg');
             height: 650px;
             background-repeat: no-repeat;
             background-size: cover;
@@ -234,10 +234,11 @@
                 </div>
             </div>
         </nav>
-
+<marquee>
         <div class="container">
-            <h2 translate="yes">Welcome to farmer-friendly and eco-friendly dairy</h2>
+            <h2 translate="yes">Welcome to farmer-<br>friendly and eco-friendly <br>dairy</h2>
         </div>
+        </marquee>
     </div>
 
     <div class="container py-5">
