@@ -7,7 +7,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
  ![Dashboard](images/dashboard.png)
  ![](images/dash2.png)
   <hr>
-  ## Features
+## Features
 
 - **Admin Dashboard**: Manage farmers, staff, products, and view reports.
 - **Farmer Dashboard**: View farmer details, dairy animal details, daily data entries, and bills.
