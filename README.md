@@ -222,6 +222,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
    - Make payments using Razorpay and receive invoices.
 
 <hr>
+
  ## Contributing
 
 1. Fork the repository.
@@ -230,6 +231,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 4. Push to the branch: `git push origin feature-name`.
 5. Submit a pull request.
 <hr>
+
 ## How to Run
 1. Ensure WAMP server is running.
 2. Open a web browser and navigate to `http://localhost/your_project_directory`.
@@ -243,6 +245,12 @@ Enjoy managing your dairy operations efficiently with the Dairy Serve Management
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or issues, please contact:
+- **Ravi Raghavendra G S**
+- Email: [raviraghavendrags@gmail.com](mailto:raviraghavendrags@gmail.com)
 <hr>
 
 <center>************* THANK YOU *************</center>
