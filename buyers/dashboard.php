@@ -149,6 +149,7 @@ unset($_SESSION['new_notification']);
 <!-- Main Content -->
 <section>
     <div class="container">
+    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OVQs04H2M8MhQt" async> </script> <h5>Donate Us With  <i class="fas fa-heart fa-beat-fade" style="color: red;"></i></h5></form>
         <div class="card-container">
             <div class="card p-3 mb-2 bg-success text-dark">
                 <div class="card-body d-flex align-items-center justify-content-center">
