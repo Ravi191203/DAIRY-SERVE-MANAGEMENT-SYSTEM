@@ -242,6 +242,8 @@ if ($result && mysqli_num_rows($result) > 0) {
                     <button type="back" class="btn btn-secondary"><a href="../Service.php"> Back</a></button>
                     <button type="reset" class="btn btn-danger"><i class="fa-solid fa-circle-xmark" style="color: #000000;"></i> Clear Order Form</button>
                 </div>
+                <br>
+                <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OVQavfU7PaCTY6" async> </script>
             </section>
         </form>
     </div>
