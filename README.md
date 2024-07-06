@@ -7,6 +7,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
  ![Dashboard](images/dashboard.png)
  ![](images/dash2.png)
   <hr>
+  
 ## Features
 
 - **Admin Dashboard**: Manage farmers, staff, products, and view reports.
@@ -15,6 +16,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
 - **Buyer Dashboard**: View products, place orders, view order history, make payments, and receive invoices.
 - **Razorpay Payment Gateway**: Secure online payment processing.
 <hr>
+
 ## Modules
 
 1.  Login/Register Module 
@@ -62,6 +64,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
    - This module provides tools for admins to manage orders. It includes features for viewing, updating, and processing customer orders, handling order status, and generating order reports.
      ![Admin Order Management Module](images/adminapp.png)
 <hr>
+
 **Integrate Razorpay Checkout**:
    - Add the Razorpay Checkout script in your payment page:
      ```html
@@ -120,6 +123,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
      ```
    - Handle the payment success or failure in your `callback` endpoint.
 <hr>
+
 ## User Privileges
 
 ### Admin
