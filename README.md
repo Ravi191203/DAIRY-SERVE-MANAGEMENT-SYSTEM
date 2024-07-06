@@ -48,7 +48,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
    - This module manages the inventory of dairy products. It allows adding new products, updating product details, managing stock levels, and tracking product sales.
 ![Dairy Products Module](images/prod1.png)
 ![](images/prod2.png)
-![](images/prod2.png)
+
 <hr>
 8.  Admin Order Management Module 
    
@@ -146,4 +146,4 @@ Enjoy managing your dairy operations efficiently with the Dairy Serve Management
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 <hr>
 
-************* THANK YOU *************
+<center>************* THANK YOU *************</center>
