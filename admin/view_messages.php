@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["username"]) || $_SESSION["role"] != "admin") {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 require 'db_connect.php'; // Include your database connection file

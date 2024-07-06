@@ -4,7 +4,7 @@ require_once 'db_connect.php'; // Ensure this file connects to your database
 
 // Check if the user is logged in and is a farmer (you may need to adjust this based on your login logic)
 if (!isset($_SESSION["username"]) || $_SESSION["role"] != "farmer") {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 

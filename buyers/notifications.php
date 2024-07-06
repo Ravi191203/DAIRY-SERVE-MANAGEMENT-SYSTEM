@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 // Check if the user_id is set in the session
 if (!isset($_SESSION['user_id'])) {
     // Handle the case when user_id is not set (e.g., redirect to login page)
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 

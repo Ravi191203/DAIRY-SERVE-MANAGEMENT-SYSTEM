@@ -4,7 +4,7 @@ include('db_connect.php');
 
 // Check if user is logged in
 if (!isset($_SESSION['username'])) {
-    header('Location: login.php');
+    header('Location: index.php');
     exit();
 }
 

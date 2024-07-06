@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["username"]) || $_SESSION["role"] != "farmer") {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Farmer.</b></center>";
