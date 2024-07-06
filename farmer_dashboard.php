@@ -74,7 +74,7 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
                
                 <h1 class="navbar-text text-dark"><center>Dairy Serve Management System</center></h1> </a>
                 <div class="ml-auto">
-                    <a href="/dairy-serve-management-system/logout.php" class="btn btn-info btn-logout">
+                    <a href="/dairy-serve-management-system/logout.php" class="btn btn-danger btn-logout">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </a>
                 </div>

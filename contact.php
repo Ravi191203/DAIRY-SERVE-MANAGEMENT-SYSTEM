@@ -12,7 +12,7 @@
   <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: lightslategrey;
         }
         .contact-form {
             background-color: #fff;
@@ -37,19 +37,19 @@
                 <form action="contact_process.php" method="post">
                     <div class="form-group">
                         <label for="name"><i class="fas fa-user"></i> Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name...." required>
                     </div>
                     <div class="form-group">
                         <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Mail...." required>
                     </div>
                     <div class="form-group">
                         <label for="phone"><i class="fas fa-phone"></i> Phone</label>
-                        <input type="text" class="form-control" id="phone" name="phone" required>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number..." required>
                     </div>
                     <div class="form-group">
                         <label for="message"><i class="fas fa-comment"></i> Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message...." required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Send Message</button>
                 </form>
