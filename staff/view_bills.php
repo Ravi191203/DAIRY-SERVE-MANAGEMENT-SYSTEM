@@ -21,9 +21,20 @@ $result = $conn->query($sql);
     <!-- DataTables CSS -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
     <style>
-        body {
-            background-color: #f8f9fa;
+         body{
+            justify-content: center ;
+            background-color: lightgrey;
         }
+        section {
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
 
         h2 {
             color: #343a40;
@@ -99,16 +110,17 @@ $result = $conn->query($sql);
     </style>
 </head>
 <body>
+    <section>
     <div class="container mt-5">
         <h2 class="mb-4">View Bills</h2>
         <table id="billsTable" class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Bill ID</th>
-                    <th>Customer ID</th>
-                    <th>Amount</th>
-                    <th>Date</th>
-                    <th>Actions</th>
+                    <th class="text-white">Bill ID</th>
+                    <th class="text-white">Customer ID</th>
+                    <th class="text-white">Amount</th>
+                    <th class="text-white">Date</th>
+                    <th class="text-white">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -121,7 +133,7 @@ $result = $conn->query($sql);
                                 <td>{$row['amount']}</td>
                                 <td>{$row['date']}</td>
                                 <td>
-                                    <a href='generate_invoice.php?bill_id={$row['bill_id']}' class='btn btn-primary'>Print Invoice</a>
+                                    <a href='generate_invoice.php?bill_id={$row['bill_id']}' class='btn btn-danger'>Print Invoice</a>
                                 </td>
                               </tr>";
                     }
@@ -132,6 +144,7 @@ $result = $conn->query($sql);
             </tbody>
         </table>
     </div>
+    </section>
     <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
 <script src="../css/bootstrap-5.3.3/popper.min.js"></script>
 <script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>

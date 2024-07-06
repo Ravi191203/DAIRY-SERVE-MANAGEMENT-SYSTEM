@@ -108,7 +108,7 @@ echo "<center><b>Welcome, " . $_SESSION["username"] . "! You are logged in as Fa
                 <a href="/dairy-serve-management-system/farmer/view_daily_data.php" class="text-decoration-none text-dark">
                     <img src="gif/q6.gif" style="width:150px;height:150px;">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-database"></i> Data</h5>
+                        <h5 class="card-title"><i class="fas fa-database"></i> View Own Daily Data</h5>
                     </div>
                 </a>
             </div>

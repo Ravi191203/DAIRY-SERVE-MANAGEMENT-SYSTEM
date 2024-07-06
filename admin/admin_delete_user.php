@@ -15,6 +15,6 @@ $stmt = $conn->prepare($delete_query);
 $stmt->bind_param("i", $id);
 $stmt->execute();
 
-header('Location: admin_dashboard.php');
+header('Location: admin_dashboard1.php');
 $conn->close();
 ?>

@@ -91,6 +91,9 @@ $total_cost = 0;
                 opacity: 1;
             }
         }
+        button{
+            margin-left: 1000px;
+        }
     </style>
 </head>
 
@@ -135,7 +138,7 @@ $total_cost = 0;
                 </tr>
             </tfoot>
         </table>
-        <button class="btn btn-primary"><a href="farmedatabill.php" style="color: white; text-decoration: none;">SUBMIT</a></button>
+        <button class="btn btn-warning"><a href="farmedatabill.php" style="color: white; text-decoration: none;">PRINT</a></button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>

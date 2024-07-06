@@ -140,6 +140,7 @@ if ($result === false) {
                             <td><?php echo $row['fat']; ?></td>
                             <td><?php echo $row['snf']; ?></td>
                             <td><?php echo $row['rate']; ?></td>
+                            
                         </tr>
                         <?php
                     }
