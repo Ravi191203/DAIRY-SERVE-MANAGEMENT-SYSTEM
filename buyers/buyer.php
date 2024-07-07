@@ -234,7 +234,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                 </div>
                 <div id="transaction_id_div" class="mb-3" style="display:none;">
                     <label for="transaction_id" class="form-label">Transaction ID</label>
-                    <input type="text" class="form-control" id="transaction_id" name="transaction_id">
+                    <input type="text" class="form-control" id="transaction_id" name="transaction_id" required  >
                     <div class="mt-3">
                         <center>
                             <h3><i class="fa-solid fa-qrcode fa-beat-fade"></i> Scan the QR code to make the payment and enter the transaction ID above. <i class="fa-solid fa-qrcode fa-beat-fade"></i></h3>

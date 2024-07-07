@@ -20,6 +20,9 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "admin") {
     <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
     <style>
+        .container{
+            margin-left: 7%;
+        }
         .header {
             display: flex;
             justify-content: space-between;
@@ -275,7 +278,6 @@ checkbox.addEventListener("change", () => {
 <!-- Footer -->
 <div class="footer alert alert-info">
     <h5>&copy;2023 Dairy Serve Management System. All Rights Reserved</h5><br>
-    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OVQs04H2M8MhQt" async> </script> </form>
 </div>
 <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
 <script src="css/bootstrap-5.3.3/popper.min.js"></script>
