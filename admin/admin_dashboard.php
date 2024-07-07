@@ -16,7 +16,7 @@
             background-color: lightgrey;
         }
         section {
-            width: 90%;
+        
             padding: 30px;
             margin: auto;
             background-color: #fff;
@@ -24,8 +24,8 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         .c1{
-            width: 90%;
-            padding: 1px;
+            
+            padding-bottom: 1px;
             margin: auto;
             background-color: #fff;
             border-radius: 20px;

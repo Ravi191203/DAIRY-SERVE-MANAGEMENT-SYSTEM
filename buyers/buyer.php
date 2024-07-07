@@ -173,9 +173,15 @@ if ($result && mysqli_num_rows($result) > 0) {
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="customer_email" class="col-sm-2 col-form-label"><i class="fa-solid fa-mobile-screen-button"></i> Customer Email</label>
+                    <label for="customer_email" class="col-sm-2 col-form-label"><i class="fa-solid fa-envelope"></i>  Customer Email</label>
                     <div class="col-sm-10">
                         <input type="email" class="form-control" name="customer_email" placeholder="EMAIL" required>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="customer_address" class="col-sm-2 col-form-label"><i class="fa-solid fa-map-marker-alt"></i> Customer Address</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" name="customer_address" placeholder="Address" required></textarea>
                     </div>
                 </div>
             </section><br>
