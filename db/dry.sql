@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 05, 2024 at 01:11 AM
+-- Generation Time: Jul 07, 2024 at 07:31 AM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -119,37 +119,40 @@ CREATE TABLE IF NOT EXISTS `customers` (
   `customer_name` varchar(255) NOT NULL,
   `customer_mobile` varchar(15) NOT NULL,
   `customer_email` varchar(255) DEFAULT NULL,
+  `customer_address` varchar(255) NOT NULL,
   PRIMARY KEY (`customer_id`),
   UNIQUE KEY `customer_email` (`customer_email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=62 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=64 ;
 
 --
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `customers` (`customer_id`, `customer_name`, `customer_mobile`, `customer_email`) VALUES
-(40, 'Ravi Raghavendra G S', '8088590270', NULL),
-(41, 'Ravi Raghavendra G S', '8088590270', NULL),
-(42, 'Ravi Raghavendra G S', '8088590270', NULL),
-(43, 'Ravi Raghavendra G S', '8088590270', NULL),
-(44, 'Ravi ', '8088590270', NULL),
-(45, 'Ravi Raghavendra G Raghavendra', '8088590270', NULL),
-(46, 'Ravi Raghavendra G Raghavendra', '8088590270', NULL),
-(47, 'dsad', 'dddddddd', NULL),
-(48, 'd', '123', NULL),
-(49, 'd', '123', NULL),
-(50, 'd', '123', NULL),
-(51, 'd', '123', NULL),
-(52, 'd', '123', NULL),
-(53, 'd', '123', NULL),
-(54, 'asdf', 'asdf', NULL),
-(55, 'xza', 'sad', NULL),
-(56, 'xza', 'sad', NULL),
-(57, 'd', '123', NULL),
-(58, 'Rahul V', '9845893388', NULL),
-(59, 'Rahul V', '9845893388', NULL),
-(60, 'Rahul V', '9845893388', NULL),
-(61, 'Tejaswi', '4639854935', 'trr@gamil.com');
+INSERT INTO `customers` (`customer_id`, `customer_name`, `customer_mobile`, `customer_email`, `customer_address`) VALUES
+(40, 'Ravi Raghavendra G S', '8088590270', NULL, ''),
+(41, 'Ravi Raghavendra G S', '8088590270', NULL, ''),
+(42, 'Ravi Raghavendra G S', '8088590270', NULL, ''),
+(43, 'Ravi Raghavendra G S', '8088590270', NULL, ''),
+(44, 'Ravi ', '8088590270', NULL, ''),
+(45, 'Ravi Raghavendra G Raghavendra', '8088590270', NULL, ''),
+(46, 'Ravi Raghavendra G Raghavendra', '8088590270', NULL, ''),
+(47, 'dsad', 'dddddddd', NULL, ''),
+(48, 'd', '123', NULL, ''),
+(49, 'd', '123', NULL, ''),
+(50, 'd', '123', NULL, ''),
+(51, 'd', '123', NULL, ''),
+(52, 'd', '123', NULL, ''),
+(53, 'd', '123', NULL, ''),
+(54, 'asdf', 'asdf', NULL, ''),
+(55, 'xza', 'sad', NULL, ''),
+(56, 'xza', 'sad', NULL, ''),
+(57, 'd', '123', NULL, ''),
+(58, 'Rahul V', '9845893388', NULL, ''),
+(59, 'Rahul V', '9845893388', NULL, ''),
+(60, 'Rahul V', '9845893388', NULL, ''),
+(61, 'Tejaswi', '4639854935', 'trr@gamil.com', ''),
+(62, 'Ravi Raghavendra G Raghavendra', '8088590270', 'df@gmail.com', ''),
+(63, 'Ravi Raghavendra G S', '8088590270', 'r@gmail.com', 'Vanitha printers 1084 Manasara Road Ittige Gudu');
 
 -- --------------------------------------------------------
 
@@ -167,14 +170,15 @@ CREATE TABLE IF NOT EXISTS `daily_data` (
   `rate` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `farmer_id` (`farmer_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `daily_data`
 --
 
 INSERT INTO `daily_data` (`id`, `farmer_id`, `date`, `milk_qty`, `fat`, `snf`, `rate`) VALUES
-(2, 18, '2024-06-11', '20.00', '23.00', '22.00', '30.00');
+(2, 18, '2024-06-11', '20.00', '23.00', '22.00', '30.00'),
+(3, 18, '2024-07-09', '10.00', '2.00', '11.00', '50.00');
 
 -- --------------------------------------------------------
 
@@ -229,15 +233,12 @@ INSERT INTO `employee` (`eid`, `ename`, `phno`, `salary`, `designation`, `addres
 (12347, 'rasi', '9908407285', 3000, 'manager', 'kudapa'),
 (12348, 'nani', '9666613357', 3000, 'manager', 'kurnool'),
 (12349, 'Ravi', '9909090909', 1000, 'staff', 'mys'),
-(12353, 'Ravi Raghavendra G S', '0808859027', 9000, 'Worker', '#1084 Manasara Road Ittigegudu'),
 (12354, 'Ravi Raghavendra G S', '0808859027', 1111, 'Worker', '#1084 Manasara Road Ittigegudu'),
 (12356, 'V Rahul', '9103052003', 30000, 'worker', 'hallekesare'),
 (12357, 'PRATHAP B', '9103052003', 9000, 'Manager', 'MUGURU'),
-(12358, 'Ravi Raghavendra G S', '0808859027', 300, 'Worker', '#1084 Manasara Road Ittigegudu'),
 (12359, 'Ravi Raghavendra G S', '0808859027', 20000, 'manager', '#1084 Manasara Road Ittigegudu'),
 (12360, 'Ravi Raghavendra G S', '0808859027', 11111, 'God', '#1084 Manasara Road Ittigegudu'),
 (12361, 'Ravi Raghavendra G S', '0808859027', 11111, 'Worker', '#1084 Manasara Road Ittigegudu'),
-(12362, 'Ravi Raghavendra G S', '0808859027', 11111, 'Worker', '#1084 Manasara Road Ittigegudu'),
 (12363, 'Ravi Raghavendra G S', '0808859027', 11111, 'Worker', '#1084 Manasara Road Ittigegudu'),
 (12368, 'Rahul', '3453', 2000, 'ww', 'ITTIGEGUD, MANASARA ROAD');
 
@@ -270,7 +271,7 @@ INSERT INTO `farmer` (`id`, `fname`, `ph`, `f_vid`, `milk_type`, `min_litre`, `r
 (4, 'Lokesh ', '9441733998', 3, 'Cow', 2, '2021-07-26', 4),
 (5, 'Ramu', '9441733914', 1, 'Buffelow', 6, '2021-07-26', 1),
 (6, 'Pavan', '9441733910', 2, 'Cow', 5, '2021-07-26', 2),
-(18, 'Rahul', '9090888000', 18, 'cow', 20, '2024-06-11', 111);
+(18, 'Rahul', '9090888000', 18, 'cow', 21, '2024-06-11', 111);
 
 -- --------------------------------------------------------
 
@@ -398,7 +399,7 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `username` varchar(255) NOT NULL,
   PRIMARY KEY (`order_id`),
   KEY `customer_id` (`customer_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=64 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=66 ;
 
 --
 -- Dumping data for table `orders`
@@ -407,7 +408,9 @@ CREATE TABLE IF NOT EXISTS `orders` (
 INSERT INTO `orders` (`order_id`, `customer_id`, `total_cost`, `payment_mode`, `transaction_id`, `status`, `order_date`, `username`) VALUES
 (60, 58, '401.00', 'online', '176547213', 'pending', '2024-06-22 11:45:38', 'Test@123'),
 (62, 60, '411.00', 'online', '564654654', 'pending', '2024-06-23 13:04:32', 'Test@123'),
-(63, 61, '26.00', 'offline', '', 'approved', '2024-06-30 14:33:02', 'Test@123');
+(63, 61, '26.00', 'offline', '', 'approved', '2024-06-30 14:33:02', 'Test@123'),
+(64, 62, '441.00', 'online', '', 'approved', '2024-07-07 07:04:21', 'Test@123456'),
+(65, 63, '401.00', 'offline', '', 'approved', '2024-07-07 07:26:13', 'Test@123');
 
 -- --------------------------------------------------------
 
@@ -423,7 +426,7 @@ CREATE TABLE IF NOT EXISTS `order_items` (
   PRIMARY KEY (`order_item_id`),
   KEY `order_id` (`order_id`),
   KEY `product_id` (`product_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=85 ;
 
 --
 -- Dumping data for table `order_items`
@@ -432,7 +435,10 @@ CREATE TABLE IF NOT EXISTS `order_items` (
 INSERT INTO `order_items` (`order_item_id`, `order_id`, `product_id`, `quantity`) VALUES
 (78, 60, 206, 1),
 (80, 62, 207, 1),
-(81, 63, 219, 1);
+(81, 63, 219, 1),
+(82, 64, 206, 1),
+(83, 64, 215, 2),
+(84, 65, 206, 1);
 
 -- --------------------------------------------------------
 
@@ -455,11 +461,11 @@ CREATE TABLE IF NOT EXISTS `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_name`, `price`, `image_path`, `stock_status`, `stock_quantity`) VALUES
-(206, 'Ghee 1 L', '401.00', '../images/g.png', 'in_stock', 93),
+(206, 'Ghee 1 L', '401.00', '../images/g.png', 'in_stock', 91),
 (207, 'Sweet 1 KG', '411.00', '../images/product27.jpg', 'in_stock', 198),
 (208, 'Butter 1 KG', '510.00', '../images/b.png', 'out_of_stock', 0),
 (211, 'Panner', '120.00', '../images/p.png', 'in_stock', 100),
-(215, 'Cone', '20.00', '../images/cone.png', 'in_stock', 60),
+(215, 'Cone', '20.00', '../images/cone.png', 'in_stock', 58),
 (217, 'Box Ice', '200.00', '../images/boxice.png', 'out_of_stock', 0),
 (218, 'Milk 1L', '52.00', '../images/product1.png', 'in_stock', 100),
 (219, 'Curd', '26.00', '../images/product2.jpg', 'in_stock', 299),
@@ -619,28 +625,7 @@ INSERT INTO `users` (`id`, `username`, `password`, `role`, `email`) VALUES
 (37, 'admin', 'e3274be5c857fb42ab72d786e281b4b8', 'admin', 'tejaswirrao@gmail.com'),
 (49, 'Test@1234', '8fa14cdd754f91cc6554c9e71929cce7', 'farmer', 'niranjans5812@gmail.com'),
 (51, 'Test@12345', '03c7c0ace395d80182db07ae2c30f034', 'staff', 'htmlbyrrgs@gmail.com'),
-(52, 'Test@123456', '03c7c0ace395d80182db07ae2c30f034', 'staff', 'rv03052003@gmail.com');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `villages`
---
-
-CREATE TABLE IF NOT EXISTS `villages` (
-  `v_id` int(3) NOT NULL AUTO_INCREMENT,
-  `v_name` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`v_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=4 ;
-
---
--- Dumping data for table `villages`
---
-
-INSERT INTO `villages` (`v_id`, `v_name`) VALUES
-(1, 'Dhakli'),
-(2, 'Dhakli'),
-(3, 'Dhakli');
+(52, 'Test@123456', '202cb962ac59075b964b07152d234b70', 'buyer', 'rsachinsachi@gmail.com');
 
 -- --------------------------------------------------------
 
