@@ -11,125 +11,78 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
 <head>
     <meta charset="UTF-8">
     <title>Staff Dashboard</title>
-    <link href="assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
-  <link href="assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
-  <link href="assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-5.3.3/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            background-size: 200% 200%;
+            animation: gradientBackground 10s ease-in-out infinite;
         }
-        .card {
-            border-radius: 20px;
-            transition: transform 0.5s, box-shadow 0.5s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .card img {
-            transition: opacity 0.5s;
-        }
-
-        .card:hover img {
-            opacity: 0.8;
-        }
-
-        .card-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            padding: 1px;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .card:hover .card-overlay {
-            opacity: 1;
-        }
-
-        /* Gradient animation */
         @keyframes gradientBackground {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-        header{
-            border-radius: 20px;
-        }
-        body {
-            background: linear-gradient(270deg, #ff7e5f, #feb47b);
-            background-size: 400% 400%;
-            animation: gradientBackground 15s ease infinite;
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .navbar {
-            background-color: rgba(0, 0, 0, 0.8) !important;
-            border-radius: 20px;
+            background-color: #4b6cb7;
+            border-radius: 15px;
         }
 
         .navbar-brand img {
             width: 100px;
         }
 
-        h1 {
-            font-size: 2rem;
+        h1, h2 {
             font-weight: bold;
         }
 
-        h2 {
-            margin-bottom: 30px;
+        .btn-outline-secondary {
+            color: white;
+            border-color: white;
         }
 
-        .card-body a {
-            text-decoration: none;
-            color: inherit;
+        .btn-outline-secondary:hover {
+            background-color: white;
+            color: #4b6cb7;
         }
 
-        footer {
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
             background-color: #343a40;
             padding: 20px;
             color: white;
             text-align: center;
         }
-
-        .card-overlay {
-            border-radius: 10px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            padding: 1px;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.3s;
+        h5{
+            text-decoration: none;
+            color:white;
+            font-weight:bold;
         }
-        .gradient-text {
-            background: linear-gradient(45deg, blue, #ee0979);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            
-        }
-        .card:hover .card-overlay {
-            opacity: 1;
+        a{
+            text-decoration: none;
+            color:white;
         }
     </style>
 </head>
@@ -137,12 +90,13 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg alert alert-danger text-black">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="/dairy-serve-management-system/images/new.png" alt="Logo"></a>
-                <h1 class="navbar-text text-white">Dairy Serve Management System</h1>
+                <h1 class="navbar-text">Dairy Serve Management System</h1>
                 <div class="ml-auto">
-                <a href="logout.php" class="btn btn-outline-success"><i class="fas fa-sign-in-alt"></i> Logout</a>                </div>
+                    <a href="logout.php" class="btn btn-danger"><i class="fas fa-sign-in-alt"></i> Logout</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -150,131 +104,91 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] != "staff") {
     <!-- Main Content -->
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center">
-        <center><h2 class=" gradient-text">STAFF DASHBOARD</h2></center>
+            <h2 class="text-center">STAFF DASHBOARD</h2>
             <a href="/dairy-serve-management-system/staff/staff_option.php" class="btn btn-outline-secondary">Back</a>
         </div>
-        <div class="row mt-1">
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div class="card bg-light text-center transition-all">
-                    <div class="card-body position-relative">
-                        <a href="/dairy-serve-management-system/staff/farmer_details.php">
-                            <img src="/dairy-serve-management-system/images/farmers.jpeg" alt="Farmer" style="width:150px;height:150px;">
-                            <div class="card-overlay">
-                                <h5>Farmer Details</h5>
-                            </div>
-                        </a>
-                    </div>
+        <div class="row mt-3">
+            <div class="col-md-4 mb-3">
+                <div class="section">
+                    <a href="/dairy-serve-management-system/staff/farmer_details.php">
+                        <img src="/dairy-serve-management-system/images/farmers.jpeg" alt="Farmer">
+                        <h5>Farmer Details</h5>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div class="card bg-light text-center transition-all">
-                    <div class="card-body position-relative">
-                        <a href="/dairy-serve-management-system/staff/view_staff_details.php">
-                            <img src="/dairy-serve-management-system/gif/q12.gif" alt="Staff" style="width:150px;height:150px;">
-                            <div class="card-overlay">
-                                <h5>Logged in Staff Details</h5>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-md-4 mb-3">
+                <div class="section">
+                    <a href="/dairy-serve-management-system/staff/view_staff_details.php">
+                        <img src="/dairy-serve-management-system/gif/q12.gif" alt="Staff">
+                        <h5>Logged in Staff Details</h5>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div class="card bg-light text-center transition-all">
-                    <div class="card-body position-relative">
-                        <a href="/dairy-serve-management-system/staff/animal_details.php">
-                            <img src="images/cow_.png" alt="Animal" style="width:150px;height:150px;">
-                            <div class="card-overlay">
-                                <h5>Animal Details</h5>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-md-4 mb-3">
+                <div class="section">
+                    <a href="/dairy-serve-management-system/staff/animal_details.php">
+                        <img src="images/cow_.png" alt="Animal">
+                        <h5>Animal Details</h5>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div class="card bg-light text-center transition-all">
-                    <div class="card-body position-relative">
-                        <a href="/dairy-serve-management-system/staff/daily_data.php">
-                            <img src="/dairy-serve-management-system/gif/q1.gif" alt="Daily Data" style="width:150px;height:150px;">
-                            <div class="card-overlay">
-                                <h5>View Daily Data</h5>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-md-4 mb-3">
+                <div class="section">
+                    <a href="/dairy-serve-management-system/staff/daily_data.php">
+                        <img src="/dairy-serve-management-system/gif/q1.gif" alt="Daily Data">
+                        <h5>View Daily Data</h5>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div class="card bg-light text-center transition-all">
-                    <div class="card-body position-relative">
-                        <a href="/dairy-serve-management-system/staff/add_daily_data.php">
-                            <img src="images/mail-inbox-add-16-filled_.png" alt="Daily Data" style="width:150px;height:150px;">
-                            <div class="card-overlay">
-                                <h5>Add Daily Data</h5>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-md-4 mb-3">
+                <div class="section">
+                    <a href="/dairy-serve-management-system/staff/add_daily_data.php">
+                        <img src="images/mail-inbox-add-16-filled_.png" alt="Daily Data">
+                        <h5>Add Daily Data</h5>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div class="card bg-light text-center transition-all">
-                    <div class="card-body position-relative">
-                        <a href="/dairy-serve-management-system/staff/view_bills.php">
-                            <img src="/dairy-serve-management-system/gif/q3.gif" alt="View Bills" style="width:150px;height:150px;">
-                            <div class="card-overlay">
-                                <h5>View Bills</h5>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-md-4 mb-3">
+                <div class="section">
+                    <a href="/dairy-serve-management-system/staff/view_bills.php">
+                        <img src="/dairy-serve-management-system/gif/q3.gif" alt="View Bills">
+                        <h5>View Bills</h5>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div class="card bg-light text-center transition-all">
-                    <div class="card-body position-relative">
-                        <a href="/dairy-serve-management-system/staff/generate_bill.php">
-                            <img src="images/bill_ (1).png" alt="Generate Bill" style="width:150px;height:150px;">
-                            <div class="card-overlay">
-                                <h5>Generate Bill</h5>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-md-4 mb-3">
+                <div class="section">
+                    <a href="/dairy-serve-management-system/staff/generate_bill.php">
+                        <img src="images/bill_ (1).png" alt="Generate Bill">
+                        <h5>Generate Bill</h5>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div class="card bg-light text-center transition-all">
-                    <div class="card-body position-relative">
-                        <a href="/dairy-serve-management-system/add_customer_process.php">
-                            <img src="/dairy-serve-management-system/gif/q2.gif" alt="Add Customers" style="width:150px;height:150px;">
-                            <div class="card-overlay">
-                                <h5>Add Customers</h5>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-md-4 mb-3">
+                <div class="section">
+                    <a href="/dairy-serve-management-system/add_customer_process.php">
+                        <img src="/dairy-serve-management-system/gif/q2.gif" alt="Add Customers">
+                        <h5>Add Customers</h5>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div class="card bg-light text-center transition-all">
-                    <div class="card-body position-relative">
-                        <a href="/dairy-serve-management-system/staff/staff_cart.php">
-                            <img src="/dairy-serve-management-system/images/Dairyproducts.png" alt="Cart" style="width:150px;height:150px;">
-                            <div class="card-overlay">
-                                <h5>Cart</h5>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-md-4 mb-3">
+                <div class="section">
+                    <a href="/dairy-serve-management-system/staff/staff_cart.php">
+                        <img src="/dairy-serve-management-system/images/Dairyproducts.png" alt="Cart">
+                        <h5>Cart</h5>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white mt-5">
+    <footer class="footer mt-5">
         <div class="container text-center">
             <p>&copy; 2023 Dairy Serve Management System. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
-<script src="css/bootstrap-5.3.3/popper.min.js"></script>
-<script src="css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
-<script src="css/bootstrap-5.3.3/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
