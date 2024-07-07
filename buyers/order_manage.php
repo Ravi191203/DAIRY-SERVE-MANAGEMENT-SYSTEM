@@ -5,8 +5,8 @@
     <title>Admin Order Management</title>
     <link rel="stylesheet" href="../css/bootstrap-5.3.3/bootstrap.min.css" />
     <link href="../assets/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
-  <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
-  <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+    <link href="../assets/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
+    <link href="../assets/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -58,50 +58,62 @@
         $result = mysqli_query($conn, $query);
 
         if (mysqli_num_rows($result) > 0) {
+            $orders = [];
+            while ($row = mysqli_fetch_assoc($result)) {
+                $orders[$row['username']][] = $row;
+            }
         ?>
         <section>
             <div class="table-responsive order-table">
                 <table class="table table-bordered table-hover">
                     <thead class="table-dark">
                         <tr>
-                        <th><i class="fa fa-hashtag"></i> Order ID</th>
-                        <th><i class="fa fa-calendar"></i> Order Date</th>
-                        <th><i class="fa fa-indian-rupee-sign"></i> Total Cost</th>
-                        <th><i class="fa fa-credit-card"></i> Payment Mode</th>
-                        <th><i class="fa fa-info-circle"></i> Status</th>
-                        <th><i class="fa fa-cogs"></i> Actions</th>
+                            <th><i class="fa fa-hashtag"></i> Order ID</th>
+                            <th><i class="fa fa-calendar"></i> Order Date</th>
+                            <th><i class="fa fa-user"></i> Username</th>
+                            <th><i class="fa fa-indian-rupee-sign"></i> Total Cost</th>
+                            <th><i class="fa fa-credit-card"></i> Payment Mode</th>
+                            <th><i class="fa fa-info-circle"></i> Status</th>
+                            <th><i class="fa fa-cogs"></i> Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php 
-                        while ($row = mysqli_fetch_assoc($result)) {
+                        foreach ($orders as $username => $userOrders) {
+                            foreach ($userOrders as $order) {
                         ?>
                         <tr>
-                            <td><?php echo $row['order_id']; ?></td>
-                            <td><?php echo $row['order_date']; ?></td>
-                            <td><?php echo $row['total_cost']; ?></td>
-                            <td><?php echo ucfirst($row['payment_mode']); ?></td>
-                            <td><?php echo ucfirst($row['status']); ?></td>
+                            <td><?php echo $order['order_id']; ?></td>
+                            <td><?php echo $order['order_date']; ?></td>
+                            <td><?php echo $username; ?></td>
+                            <td><?php echo $order['total_cost']; ?></td>
+                            <td><?php echo ucfirst($order['payment_mode']); ?></td>
+                            <td><?php echo ucfirst($order['status']); ?></td>
                             <td class="order-actions">
                                 <form method="POST">
-                                    <input type="hidden" name="delete_order_id" value="<?php echo $row['order_id']; ?>">
-                                    <input type="hidden" name="delete_product_id" value="<?php echo $row['product_id']; ?>">
+                                    <input type="hidden" name="delete_order_id" value="<?php echo $order['order_id']; ?>">
+                                    <input type="hidden" name="delete_product_id" value="<?php echo $order['product_id']; ?>">
                                     <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                 </form>
-                                <button onclick="printOrder(<?php echo $row['order_id']; ?>)" class="btn btn-secondary btn-sm">Print</button>
+                                <button onclick="printOrder(<?php echo $order['order_id']; ?>)" class="btn btn-secondary btn-sm">Print</button>
                             </td>
                         </tr>
-                        <?php } ?>
+                        <?php 
+                            }
+                        } 
+                        ?>
                     </tbody>
                 </table>
-            <br>
+                <br>
             </div>
             
             <h5 class="order-items">Order Items</h5>
             <ul class="list-group">
                 <?php
-                mysqli_data_seek($result, 0); // Reset result pointer
-                while ($item = mysqli_fetch_assoc($result)) { ?>
+                foreach ($orders as $username => $userOrders) {
+                    echo "<li class='list-group-item'><strong>Username: $username</strong></li>";
+                    foreach ($userOrders as $item) {
+                ?>
                     <li class="list-group-item">
                         <div class="row">
                             <div class="col-2">
@@ -114,11 +126,14 @@
                             <div class="col">
                                 <strong>Product:</strong> <?php echo $item['product_name']; ?><br>
                                 <strong>Quantity:</strong> <?php echo $item['quantity']; ?><br>
-                                <strong>Price:</strong> ₹ <?php echo $item['price']; ?>
+                                <strong>Price:</strong> ₹ <?php echo $item['price']; ?><br>
                             </div>
                         </div>
                     </li>
-                <?php } ?>
+                <?php 
+                    }
+                } 
+                ?>
             </ul>
             
         <?php
@@ -161,9 +176,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
     <script src="../css/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
-<script src="../css/bootstrap-5.3.3/popper.min.js"></script>
-<script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
-<script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
+    <script src="../css/bootstrap-5.3.3/popper.min.js"></script>
+    <script src="../css/bootstrap-5.3.3/jquery-3.5.1.slim.min.js"></script>
+    <script src="../css/bootstrap-5.3.3/bootstrap.min.js"></script>
     </section>
 </body>
 </html>
