@@ -10,7 +10,7 @@ The Dairy Serve Management System is a comprehensive solution designed to manage
   <hr>
 
 ## pptx also download if you want...
-[pptx](https://drive.google.com/uc?export=download&id=1FxReRmi2PH1AebTXsqLqdotixiZMdjXr)
+[pptx](https://drive.google.com/uc?export=download&id=1GBHNJQQk2gxzxch1N_u6eS-e3C0TICSW)
 
 ## Features
 
