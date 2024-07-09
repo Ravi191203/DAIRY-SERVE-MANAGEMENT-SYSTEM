@@ -5,12 +5,13 @@
 The Dairy Serve Management System is a comprehensive solution designed to manage various aspects of a dairy business. The system is built using HTML, CSS, Bootstrap, JavaScript for the front end, and PHP, MySQL (WAMP) for the backend. It includes multiple modules and functionalities tailored to streamline operations, manage data efficiently, and provide an intuitive interface for different user roles.
 
 ## Download Report if you Want...
-  [rrgs_dev_report](https://drive.google.com/uc?export=download&id=1Dj98aedjADqSAr-1vu4m29o0Tv5w1pfZ)
+  [By rrgs_dev_DSMS report](https://drive.google.com/uc?export=download&id=1Dj98aedjADqSAr-1vu4m29o0Tv5w1pfZ)
 
   <hr>
 
 ## pptx also download if you want...
-[pptx]()
+[pptx](https://drive.google.com/uc?export=download&id=1FxReRmi2PH1AebTXsqLqdotixiZMdjXr)
+
 ## Features
 
 - **Admin Dashboard**: Manage farmers, staff, products, and view reports.
